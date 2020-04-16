@@ -176,14 +176,14 @@
 <div class="section" id="module-pydra.engine.audit">
 <span id="pydra-engine-audit-module"></span><h1>pydra.engine.audit module<a class="headerlink" href="#module-pydra.engine.audit" title="Permalink to this headline">¶</a></h1>
 <p>Module to keep track of provenance information.</p>
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.audit.Audit">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.audit.</code><code class="sig-name descname">Audit</code><span class="sig-paren">(</span><em class="sig-param">audit_flags</em>, <em class="sig-param">messengers</em>, <em class="sig-param">messenger_args</em>, <em class="sig-param">develop=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.audit.</code><code class="sig-name descname">Audit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">audit_flags</span></em>, <em class="sig-param"><span class="n">messengers</span></em>, <em class="sig-param"><span class="n">messenger_args</span></em>, <em class="sig-param"><span class="n">develop</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Handle provenance tracking and resource utilization.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.audit.Audit.audit_check">
-<code class="sig-name descname">audit_check</code><span class="sig-paren">(</span><em class="sig-param">flag</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.audit_check" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">audit_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">flag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.audit_check" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether auditing is enabled for a particular flag.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -192,9 +192,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.audit.Audit.audit_message">
-<code class="sig-name descname">audit_message</code><span class="sig-paren">(</span><em class="sig-param">message</em>, <em class="sig-param">flags=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.audit_message" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">audit_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">flags</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.audit_message" title="Permalink to this definition">¶</a></dt>
 <dd><p>Send auditing message.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -206,21 +206,21 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.audit.Audit.finalize_audit">
-<code class="sig-name descname">finalize_audit</code><span class="sig-paren">(</span><em class="sig-param">result</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.finalize_audit" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">finalize_audit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.finalize_audit" title="Permalink to this definition">¶</a></dt>
 <dd><p>End auditing.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.audit.Audit.monitor">
 <code class="sig-name descname">monitor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.monitor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start resource monitoring.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.audit.Audit.start_audit">
-<code class="sig-name descname">start_audit</code><span class="sig-paren">(</span><em class="sig-param">odir</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.start_audit" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">start_audit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">odir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.start_audit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start recording provenance.</p>
 <p>Monitored information is not sent until directory is created,
 in case message directory is inside task output directory.</p>
@@ -287,6 +287,7 @@ in case message directory is inside task output directory.</p>
             <dt>Branches</dt>
             <dd><a href="pydra.engine.audit.html">master</a></dd>
             <dd><a href="../../pre-attrs-uses-dataclasses/api/pydra.engine.audit.html">pre-attrs-uses-dataclasses</a></dd>
+            <dd><a href="../../ref-etelemetry/api/pydra.engine.audit.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>

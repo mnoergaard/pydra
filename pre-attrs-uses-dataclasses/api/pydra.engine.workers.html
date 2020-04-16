@@ -179,39 +179,39 @@
 <div class="section" id="module-pydra.engine.workers">
 <span id="pydra-engine-workers-module"></span><h1>pydra.engine.workers module<a class="headerlink" href="#module-pydra.engine.workers" title="Permalink to this headline">¶</a></h1>
 <p>Execution workers.</p>
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.workers.ConcurrentFuturesWorker">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">ConcurrentFuturesWorker</code><span class="sig-paren">(</span><em class="sig-param">n_procs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">ConcurrentFuturesWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_procs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.Worker" title="pydra.engine.workers.Worker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.Worker</span></code></a></p>
 <p>A worker to execute in parallel using Python’s concurrent futures.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.ConcurrentFuturesWorker.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Finalize the internal pool of tasks.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.ConcurrentFuturesWorker.exec_as_coro">
-<em class="property">async </em><code class="sig-name descname">exec_as_coro</code><span class="sig-paren">(</span><em class="sig-param">runnable</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker.exec_as_coro" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">exec_as_coro</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker.exec_as_coro" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run a task (coroutine wrapper).</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.ConcurrentFuturesWorker.run_el">
-<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param">runnable</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker.run_el" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.ConcurrentFuturesWorker.run_el" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run a task.</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.workers.DistributedWorker">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">DistributedWorker</code><span class="sig-paren">(</span><em class="sig-param">loop=None</em>, <em class="sig-param">max_jobs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DistributedWorker" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">DistributedWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_jobs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DistributedWorker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.Worker" title="pydra.engine.workers.Worker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.Worker</span></code></a></p>
 <p>Base Worker for distributed execution.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.DistributedWorker.fetch_finished">
-<em class="property">async </em><code class="sig-name descname">fetch_finished</code><span class="sig-paren">(</span><em class="sig-param">futures</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DistributedWorker.fetch_finished" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">fetch_finished</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">futures</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DistributedWorker.fetch_finished" title="Permalink to this definition">¶</a></dt>
 <dd><p>Awaits asyncio’s <a class="reference external" href="https://docs.python.org/3/library/asyncio-task.html#asyncio.Task" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">asyncio.Task</span></code></a> until one is finished.</p>
 <p>Limits number of submissions based on
 py:attr:<cite>DistributedWorker.max_jobs</cite>.</p>
@@ -228,7 +228,7 @@ py:attr:<cite>DistributedWorker.max_jobs</cite>.</p>
 </dl>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pydra.engine.workers.DistributedWorker.max_jobs">
 <code class="sig-name descname">max_jobs</code><em class="property"> = None</em><a class="headerlink" href="#pydra.engine.workers.DistributedWorker.max_jobs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maximum number of concurrently running jobs.</p>
@@ -236,77 +236,77 @@ py:attr:<cite>DistributedWorker.max_jobs</cite>.</p>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.workers.SerialPool">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">SerialPool</code><a class="headerlink" href="#pydra.engine.workers.SerialPool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A simple class to imitate a pool executor of concurrent futures.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.SerialPool.done">
 <code class="sig-name descname">done</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialPool.done" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether the task is finished.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.SerialPool.result">
 <code class="sig-name descname">result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialPool.result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the result of a task.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.SerialPool.submit">
-<code class="sig-name descname">submit</code><span class="sig-paren">(</span><em class="sig-param">interface</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialPool.submit" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">submit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">interface</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialPool.submit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Send new task.</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.workers.SerialWorker">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">SerialWorker</code><a class="headerlink" href="#pydra.engine.workers.SerialWorker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.Worker" title="pydra.engine.workers.Worker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.Worker</span></code></a></p>
 <p>A worker to execute linearly.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.SerialWorker.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialWorker.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return whether the task is finished.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.SerialWorker.run_el">
-<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param">interface</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialWorker.run_el" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">interface</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SerialWorker.run_el" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run a task.</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.workers.SlurmWorker">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">SlurmWorker</code><span class="sig-paren">(</span><em class="sig-param">loop=None</em>, <em class="sig-param">max_jobs=None</em>, <em class="sig-param">poll_delay=1</em>, <em class="sig-param">sbatch_args=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SlurmWorker" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">SlurmWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_jobs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">poll_delay</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">sbatch_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SlurmWorker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.DistributedWorker" title="pydra.engine.workers.DistributedWorker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.DistributedWorker</span></code></a></p>
 <p>A worker to execute tasks on SLURM systems.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.SlurmWorker.run_el">
-<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param">runnable</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SlurmWorker.run_el" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.SlurmWorker.run_el" title="Permalink to this definition">¶</a></dt>
 <dd><p>Worker submission API.</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.workers.Worker">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">Worker</code><span class="sig-paren">(</span><em class="sig-param">loop=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">Worker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A base class for execution of tasks.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.Worker.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close this worker.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.Worker.fetch_finished">
-<em class="property">async </em><code class="sig-name descname">fetch_finished</code><span class="sig-paren">(</span><em class="sig-param">futures</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker.fetch_finished" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">fetch_finished</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">futures</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker.fetch_finished" title="Permalink to this definition">¶</a></dt>
 <dd><p>Awaits asyncio’s <a class="reference external" href="https://docs.python.org/3/library/asyncio-task.html#asyncio.Task" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">asyncio.Task</span></code></a> until one is finished.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -321,9 +321,9 @@ py:attr:<cite>DistributedWorker.max_jobs</cite>.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.workers.Worker.run_el">
-<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param">interface</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker.run_el" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">interface</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.Worker.run_el" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return coroutine for task execution.</p>
 </dd></dl>
 
@@ -383,6 +383,7 @@ py:attr:<cite>DistributedWorker.max_jobs</cite>.</p>
             <dt>Branches</dt>
             <dd><a href="../../master/api/pydra.engine.workers.html">master</a></dd>
             <dd><a href="pydra.engine.workers.html">pre-attrs-uses-dataclasses</a></dd>
+            <dd><a href="../../ref-etelemetry/api/pydra.engine.workers.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>

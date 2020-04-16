@@ -176,21 +176,21 @@
 <div class="section" id="module-pydra.engine.submitter">
 <span id="pydra-engine-submitter-module"></span><h1>pydra.engine.submitter module<a class="headerlink" href="#module-pydra.engine.submitter" title="Permalink to this headline">¶</a></h1>
 <p>Handle execution backends.</p>
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.submitter.Submitter">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.submitter.</code><code class="sig-name descname">Submitter</code><span class="sig-paren">(</span><em class="sig-param">plugin='cf'</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.submitter.</code><code class="sig-name descname">Submitter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plugin</span><span class="o">=</span><span class="default_value">'cf'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Send a task to the execution backend.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.submitter.Submitter.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close submitter.</p>
 <p>Do not close previously running loop.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.submitter.Submitter.submit">
-<em class="property">async </em><code class="sig-name descname">submit</code><span class="sig-paren">(</span><em class="sig-param">runnable</em>, <em class="sig-param">wait=False</em>, <em class="sig-param">rerun=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter.submit" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">submit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em>, <em class="sig-param"><span class="n">wait</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter.submit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Coroutine entrypoint for task submission.</p>
 <p>Removes any states from <cite>runnable</cite>. If <cite>wait</cite> is
 set to False (default), aggregates all worker
@@ -213,23 +213,23 @@ and returns None.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.submitter.Submitter.submit_workflow">
-<em class="property">async </em><code class="sig-name descname">submit_workflow</code><span class="sig-paren">(</span><em class="sig-param">workflow</em>, <em class="sig-param">rerun=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter.submit_workflow" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">submit_workflow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">workflow</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.Submitter.submit_workflow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Distribute or initiate workflow execution.</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pydra.engine.submitter.get_runnable_tasks">
-<code class="sig-prename descclassname">pydra.engine.submitter.</code><code class="sig-name descname">get_runnable_tasks</code><span class="sig-paren">(</span><em class="sig-param">graph</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.get_runnable_tasks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.submitter.</code><code class="sig-name descname">get_runnable_tasks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.get_runnable_tasks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse a graph and return all runnable tasks.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="pydra.engine.submitter.is_runnable">
-<code class="sig-prename descclassname">pydra.engine.submitter.</code><code class="sig-name descname">is_runnable</code><span class="sig-paren">(</span><em class="sig-param">graph</em>, <em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.is_runnable" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.submitter.</code><code class="sig-name descname">is_runnable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.submitter.is_runnable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if a task within a graph is runnable.</p>
 </dd></dl>
 
@@ -287,6 +287,7 @@ and returns None.</p>
             <dt>Branches</dt>
             <dd><a href="../master/api/pydra.engine.submitter.html">master</a></dd>
             <dd><a href="../pre-attrs-uses-dataclasses/api/pydra.engine.submitter.html">pre-attrs-uses-dataclasses</a></dd>
+            <dd><a href="../ref-etelemetry/api/pydra.engine.submitter.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>

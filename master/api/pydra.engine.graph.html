@@ -176,24 +176,24 @@
 <div class="section" id="module-pydra.engine.graph">
 <span id="pydra-engine-graph-module"></span><h1>pydra.engine.graph module<a class="headerlink" href="#module-pydra.engine.graph" title="Permalink to this headline">¶</a></h1>
 <p>Data structure to support <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.Workflow" title="pydra.engine.core.Workflow"><code class="xref py py-class docutils literal notranslate"><span class="pre">Workflow</span></code></a> tasks.</p>
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.graph.DiGraph">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.graph.</code><code class="sig-name descname">DiGraph</code><span class="sig-paren">(</span><em class="sig-param">nodes=None</em>, <em class="sig-param">edges=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.graph.</code><code class="sig-name descname">DiGraph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A simple Directed Graph object.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.add_edges">
-<code class="sig-name descname">add_edges</code><span class="sig-paren">(</span><em class="sig-param">new_edges</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.add_edges" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">add_edges</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_edges</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.add_edges" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add new edges and sort the new graph.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.add_nodes">
-<code class="sig-name descname">add_nodes</code><span class="sig-paren">(</span><em class="sig-param">new_nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.add_nodes" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">add_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_nodes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.add_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Insert new nodes and sort the new graph.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.calculate_max_paths">
 <code class="sig-name descname">calculate_max_paths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.calculate_max_paths" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculate maximum paths.</p>
@@ -201,7 +201,7 @@
 and all of the connections.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.copy">
 <code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.copy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Duplicate this graph.</p>
@@ -209,33 +209,33 @@ and all of the connections.</p>
 but runnable objects are the same.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.edges">
 <em class="property">property </em><code class="sig-name descname">edges</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.edges" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of the links between nodes.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.edges_names">
 <em class="property">property </em><code class="sig-name descname">edges_names</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.edges_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get edges as pairs of the nodes they connect.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.nodes">
 <em class="property">property </em><code class="sig-name descname">nodes</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of the nodes currently contained in the graph.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.nodes_names_map">
 <em class="property">property </em><code class="sig-name descname">nodes_names_map</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.nodes_names_map" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a map of node names to nodes.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.remove_nodes">
-<code class="sig-name descname">remove_nodes</code><span class="sig-paren">(</span><em class="sig-param">nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_nodes" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">remove_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mark nodes for removal from the graph, re-sorting if needed.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -252,9 +252,9 @@ are removed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.remove_nodes_connections">
-<code class="sig-name descname">remove_nodes_connections</code><span class="sig-paren">(</span><em class="sig-param">nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_nodes_connections" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">remove_nodes_connections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_nodes_connections" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove connections between nodes.</p>
 <p>Also prunes the nodes from <code class="docutils literal notranslate"><span class="pre">_node_wip</span></code>.</p>
 <dl class="field-list simple">
@@ -264,21 +264,21 @@ are removed.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.sorted_nodes">
 <em class="property">property </em><code class="sig-name descname">sorted_nodes</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.sorted_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return sorted nodes (runs sorting if needed).</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.sorted_nodes_names">
 <em class="property">property </em><code class="sig-name descname">sorted_nodes_names</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.sorted_nodes_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of sorted nodes names.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.sorting">
-<code class="sig-name descname">sorting</code><span class="sig-paren">(</span><em class="sig-param">presorted=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.sorting" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">sorting</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">presorted</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.sorting" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sort this graph.</p>
 <p>Sorting starts either from self.nodes or the
 previously sorted list.</p>
@@ -345,6 +345,7 @@ previously sorted list.</p>
             <dt>Branches</dt>
             <dd><a href="pydra.engine.graph.html">master</a></dd>
             <dd><a href="../../pre-attrs-uses-dataclasses/api/pydra.engine.graph.html">pre-attrs-uses-dataclasses</a></dd>
+            <dd><a href="../../ref-etelemetry/api/pydra.engine.graph.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>

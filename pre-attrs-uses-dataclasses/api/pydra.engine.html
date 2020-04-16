@@ -177,30 +177,30 @@
 <div class="section" id="module-pydra.engine">
 <span id="pydra-engine-package"></span><h1>pydra.engine package<a class="headerlink" href="#module-pydra.engine" title="Permalink to this headline">¶</a></h1>
 <p>The core of the workflow engine.</p>
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.AuditFlag">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">AuditFlag</code><a class="headerlink" href="#pydra.engine.AuditFlag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Flag" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Flag</span></code></a></p>
 <p>Auditing flags.</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pydra.engine.AuditFlag.ALL">
 <code class="sig-name descname">ALL</code><em class="property"> = 3</em><a class="headerlink" href="#pydra.engine.AuditFlag.ALL" title="Permalink to this definition">¶</a></dt>
 <dd><p>Track provenance and resource utilization.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pydra.engine.AuditFlag.NONE">
 <code class="sig-name descname">NONE</code><em class="property"> = 0</em><a class="headerlink" href="#pydra.engine.AuditFlag.NONE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Do not track provenance or monitor resources.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pydra.engine.AuditFlag.PROV">
 <code class="sig-name descname">PROV</code><em class="property"> = 1</em><a class="headerlink" href="#pydra.engine.AuditFlag.PROV" title="Permalink to this definition">¶</a></dt>
 <dd><p>Track provenance only.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="pydra.engine.AuditFlag.RESOURCE">
 <code class="sig-name descname">RESOURCE</code><em class="property"> = 2</em><a class="headerlink" href="#pydra.engine.AuditFlag.RESOURCE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Monitor resource utilization only.</p>
@@ -208,12 +208,12 @@
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.DockerTask">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">DockerTask</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;</em>, <em class="sig-param">cache_dir=None</em>, <em class="sig-param">input_spec: Optional[pydra.engine.specs.SpecInfo] = None</em>, <em class="sig-param">messenger_args=None</em>, <em class="sig-param">messengers=None</em>, <em class="sig-param">output_cpath='/output_pydra'</em>, <em class="sig-param">output_spec: Optional[pydra.engine.specs.SpecInfo] = None</em>, <em class="sig-param">strip=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.DockerTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.task.html#pydra.engine.task.ContainerTask" title="pydra.engine.task.ContainerTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.task.ContainerTask</span></code></a></p>
 <p>Extend shell command task for containerized execution with the Docker Engine.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.DockerTask.container_args">
 <em class="property">property </em><code class="sig-name descname">container_args</code><a class="headerlink" href="#pydra.engine.DockerTask.container_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get container-specific CLI arguments.</p>
@@ -221,18 +221,18 @@
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.ShellCommandTask">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">ShellCommandTask</code><span class="sig-paren">(</span><em class="sig-param">audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;</em>, <em class="sig-param">cache_dir=None</em>, <em class="sig-param">input_spec: Optional[pydra.engine.specs.SpecInfo] = None</em>, <em class="sig-param">messenger_args=None</em>, <em class="sig-param">messengers=None</em>, <em class="sig-param">name=None</em>, <em class="sig-param">output_spec: Optional[pydra.engine.specs.SpecInfo] = None</em>, <em class="sig-param">strip=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.ShellCommandTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.core.TaskBase</span></code></a></p>
 <p>Wrap a shell command as a task element.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.ShellCommandTask.cmdline">
 <em class="property">property </em><code class="sig-name descname">cmdline</code><a class="headerlink" href="#pydra.engine.ShellCommandTask.cmdline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the actual command line that will be submitted.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.ShellCommandTask.command_args">
 <em class="property">property </em><code class="sig-name descname">command_args</code><a class="headerlink" href="#pydra.engine.ShellCommandTask.command_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get command line arguments.</p>
@@ -240,21 +240,21 @@
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.Submitter">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Submitter</code><span class="sig-paren">(</span><em class="sig-param">plugin='cf'</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Submitter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plugin</span><span class="o">=</span><span class="default_value">'cf'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Send a task to the execution backend.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Submitter.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Close submitter.</p>
 <p>Do not close previously running loop.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Submitter.submit">
-<em class="property">async </em><code class="sig-name descname">submit</code><span class="sig-paren">(</span><em class="sig-param">runnable</em>, <em class="sig-param">wait=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter.submit" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">submit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em>, <em class="sig-param"><span class="n">wait</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter.submit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Coroutine entrypoint for task submission.</p>
 <p>Removes any states from <cite>runnable</cite>. If <cite>wait</cite> is
 set to False (default), aggregates all worker
@@ -277,22 +277,22 @@ and returns None.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Submitter.submit_workflow">
-<em class="property">async </em><code class="sig-name descname">submit_workflow</code><span class="sig-paren">(</span><em class="sig-param">workflow</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter.submit_workflow" title="Permalink to this definition">¶</a></dt>
+<em class="property">async </em><code class="sig-name descname">submit_workflow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">workflow</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter.submit_workflow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Distribute or initiate workflow execution.</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="pydra.engine.Workflow">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Workflow</code><span class="sig-paren">(</span><em class="sig-param">name, audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;, cache_dir=None, cache_locations=None, input_spec: Union[List[str], pydra.engine.specs.BaseSpec, None] = None, messenger_args=None, messengers=None, output_spec: Optional[pydra.engine.specs.BaseSpec] = None, **kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.core.TaskBase</span></code></a></p>
 <p>A composite task with structure of computational graph.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Workflow.add">
-<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">task</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.add" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.add" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a task to the workflow.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -301,9 +301,9 @@ and returns None.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Workflow.create_connections">
-<code class="sig-name descname">create_connections</code><span class="sig-paren">(</span><em class="sig-param">task</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.create_connections" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">create_connections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.create_connections" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add and connect a particular task to existing nodes in the workflow.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -312,7 +312,7 @@ and returns None.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Workflow.done_all_tasks">
 <em class="property">property </em><code class="sig-name descname">done_all_tasks</code><a class="headerlink" href="#pydra.engine.Workflow.done_all_tasks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if all tasks from the graph are done.</p>
@@ -325,21 +325,21 @@ That can be checked with <code class="xref py py-meth docutils literal notransla
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Workflow.graph_sorted">
 <em class="property">property </em><code class="sig-name descname">graph_sorted</code><a class="headerlink" href="#pydra.engine.Workflow.graph_sorted" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a sorted graph representation of the workflow.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Workflow.nodes">
 <em class="property">property </em><code class="sig-name descname">nodes</code><a class="headerlink" href="#pydra.engine.Workflow.nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the list of node names.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="pydra.engine.Workflow.set_output">
-<code class="sig-name descname">set_output</code><span class="sig-paren">(</span><em class="sig-param">connections</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.set_output" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">set_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">connections</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.set_output" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write outputs.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -422,6 +422,7 @@ That can be checked with <code class="xref py py-meth docutils literal notransla
             <dt>Branches</dt>
             <dd><a href="../../master/api/pydra.engine.html">master</a></dd>
             <dd><a href="pydra.engine.html">pre-attrs-uses-dataclasses</a></dd>
+            <dd><a href="../../ref-etelemetry/api/pydra.engine.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>
