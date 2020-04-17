@@ -274,37 +274,6 @@ files.</p></li>
 </dd></dl>
 
 <dl class="py function">
-<dt id="pydra.engine.helpers_file.fname_presuffix">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">fname_presuffix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span></em>, <em class="sig-param"><span class="n">prefix</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">suffix</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">newpath</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">use_ext</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.fname_presuffix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Manipulate path and name of input filename.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – A filename (may or may not include path)</p></li>
-<li><p><strong>prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Characters to prepend to the filename</p></li>
-<li><p><strong>suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Characters to append to the filename</p></li>
-<li><p><strong>newpath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to replace the path of the input fname</p></li>
-<li><p><strong>use_ext</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If True (default), appends the extension of the original file
-to the output name.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>path</strong> – Absolute path of the modified filename</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
-</dd>
-</dl>
-<p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pydra.engine.helpers_file</span> <span class="kn">import</span> <span class="n">fname_presuffix</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;foo.nii.gz&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">fname_presuffix</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="s1">&#39;pre&#39;</span><span class="p">,</span><span class="s1">&#39;post&#39;</span><span class="p">,</span><span class="s1">&#39;/tmp&#39;</span><span class="p">)</span>
-<span class="go">&#39;/tmp/prefoopost.nii.gz&#39;</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="py function">
 <dt id="pydra.engine.helpers_file.get_related_files">
 <code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">get_related_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">include_this_file</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.get_related_files" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of related files.</p>
@@ -471,6 +440,7 @@ leading to inconsistent behavior and <code class="docutils literal notranslate">
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../azure/api/pydra.engine.helpers_file.html">azure</a></dd>
             <dd><a href="pydra.engine.helpers_file.html">master</a></dd>
             <dd><a href="../../pre-attrs-uses-dataclasses/api/pydra.engine.helpers_file.html">pre-attrs-uses-dataclasses</a></dd>
             <dd><a href="../../ref-etelemetry/api/pydra.engine.helpers_file.html">ref-etelemetry</a></dd>
