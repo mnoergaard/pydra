@@ -277,11 +277,15 @@ Can be used only for tasks with a state.</p>
 
 <dl class="py method">
 <dt id="pydra.engine.core.TaskBase.result">
-<code class="sig-name descname">result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state_index</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.core.TaskBase.result" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state_index</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">return_inputs</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.core.TaskBase.result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the outcomes of this particular task.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>state_index</strong> – TODO</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state_index</strong> (:obj: <cite>int</cite>) – index of the element for task with splitter and multiple states</p></li>
+<li><p><strong>return_inputs</strong> (:obj: <cite>bool</cite>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – if True or “val” result is returned together with values of the input fields,
+if “ind” result is returned together with indices of the input fields</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p></p>
