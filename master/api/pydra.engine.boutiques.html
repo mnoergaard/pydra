@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pydra.engine.audit module &mdash; Pydra: A simple dataflow engine with scalable semantics 0+unknown documentation</title>
+  <title>pydra.engine.boutiques module &mdash; Pydra: A simple dataflow engine with scalable semantics 0+unknown documentation</title>
   
 
   
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../_static/banner.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pydra.engine.boutiques module" href="pydra.engine.boutiques.html" />
-    <link rel="prev" title="pydra.engine package" href="pydra.engine.html" /> 
+    <link rel="next" title="pydra.engine.core module" href="pydra.engine.core.html" />
+    <link rel="prev" title="pydra.engine.audit module" href="pydra.engine.audit.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -148,13 +148,13 @@
         
           <li><a href="pydra.engine.html">pydra.engine package</a> &raquo;</li>
         
-      <li>pydra.engine.audit module</li>
+      <li>pydra.engine.boutiques module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/api/pydra.engine.audit.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/api/pydra.engine.boutiques.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -173,64 +173,13 @@
 
 
 
-<div class="section" id="module-pydra.engine.audit">
-<span id="pydra-engine-audit-module"></span><h1>pydra.engine.audit module<a class="headerlink" href="#module-pydra.engine.audit" title="Permalink to this headline">¶</a></h1>
-<p>Module to keep track of provenance information.</p>
+<div class="section" id="module-pydra.engine.boutiques">
+<span id="pydra-engine-boutiques-module"></span><h1>pydra.engine.boutiques module<a class="headerlink" href="#module-pydra.engine.boutiques" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="pydra.engine.audit.Audit">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.audit.</code><code class="sig-name descname">Audit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">audit_flags</span></em>, <em class="sig-param"><span class="n">messengers</span></em>, <em class="sig-param"><span class="n">messenger_args</span></em>, <em class="sig-param"><span class="n">develop</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Handle provenance tracking and resource utilization.</p>
-<dl class="py method">
-<dt id="pydra.engine.audit.Audit.audit_check">
-<code class="sig-name descname">audit_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">flag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.audit_check" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determine whether auditing is enabled for a particular flag.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>flag</strong> – TODO</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="pydra.engine.audit.Audit.audit_message">
-<code class="sig-name descname">audit_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">flags</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.audit_message" title="Permalink to this definition">¶</a></dt>
-<dd><p>Send auditing message.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>message</strong> – TODO</p></li>
-<li><p><strong>flags</strong> – TODO</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="pydra.engine.audit.Audit.finalize_audit">
-<code class="sig-name descname">finalize_audit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.finalize_audit" title="Permalink to this definition">¶</a></dt>
-<dd><p>End auditing.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="pydra.engine.audit.Audit.monitor">
-<code class="sig-name descname">monitor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.monitor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Start resource monitoring.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="pydra.engine.audit.Audit.start_audit">
-<code class="sig-name descname">start_audit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">odir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.audit.Audit.start_audit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Start recording provenance.</p>
-<p>Monitored information is not sent until directory is created,
-in case message directory is inside task output directory.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>odir</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">os.pathlike</span></code>) – Message output directory.</p>
-</dd>
-</dl>
-</dd></dl>
-
+<dt id="pydra.engine.boutiques.BoshTask">
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.boutiques.</code><code class="sig-name descname">BoshTask</code><span class="sig-paren">(</span><em class="sig-param">zenodo_id=None</em>, <em class="sig-param">bosh_file=None</em>, <em class="sig-param">audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;</em>, <em class="sig-param">cache_dir=None</em>, <em class="sig-param">input_spec_names: Optional[List] = None</em>, <em class="sig-param">messenger_args=None</em>, <em class="sig-param">messengers=None</em>, <em class="sig-param">name=None</em>, <em class="sig-param">output_spec_names: Optional[List] = None</em>, <em class="sig-param">rerun=False</em>, <em class="sig-param">strip=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.boutiques.BoshTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pydra.engine.task.html#pydra.engine.task.ShellCommandTask" title="pydra.engine.task.ShellCommandTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.task.ShellCommandTask</span></code></a></p>
+<p>Shell Command Task based on the Boutiques descriptor</p>
 </dd></dl>
 
 </div>
@@ -243,10 +192,10 @@ in case message directory is inside task output directory.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pydra.engine.boutiques.html" class="btn btn-neutral float-right" title="pydra.engine.boutiques module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pydra.engine.core.html" class="btn btn-neutral float-right" title="pydra.engine.core module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pydra.engine.html" class="btn btn-neutral float-left" title="pydra.engine package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pydra.engine.audit.html" class="btn btn-neutral float-left" title="pydra.engine.audit module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -279,15 +228,15 @@ in case message directory is inside task output directory.</p>
     <div class="rst-other-versions">
         <dl>
             <dt>Tags</dt>
-            <dd><a href="../0.3/api/pydra.engine.audit.html">0.3</a></dd>
-            <dd><a href="../0.3.1/api/pydra.engine.audit.html">0.3.1</a></dd>
-            <dd><a href="../0.4/api/pydra.engine.audit.html">0.4</a></dd>
+            <dd><a href="../../0.3/index.html">0.3</a></dd>
+            <dd><a href="../../0.3.1/index.html">0.3.1</a></dd>
+            <dd><a href="../../0.4/index.html">0.4</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="../master/api/pydra.engine.audit.html">master</a></dd>
-            <dd><a href="../pre-attrs-uses-dataclasses/api/pydra.engine.audit.html">pre-attrs-uses-dataclasses</a></dd>
-            <dd><a href="../ref-etelemetry/api/pydra.engine.audit.html">ref-etelemetry</a></dd>
+            <dd><a href="pydra.engine.boutiques.html">master</a></dd>
+            <dd><a href="../../pre-attrs-uses-dataclasses/index.html">pre-attrs-uses-dataclasses</a></dd>
+            <dd><a href="../../ref-etelemetry/index.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>

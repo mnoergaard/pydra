@@ -13,6 +13,7 @@ Submodules
    :maxdepth: 1
 
    pydra.engine.audit
+   pydra.engine.boutiques
    pydra.engine.core
    pydra.engine.graph
    pydra.engine.helpers
