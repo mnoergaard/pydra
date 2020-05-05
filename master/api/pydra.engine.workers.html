@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pydra.engine.workers module &mdash; Pydra: A simple dataflow engine with scalable semantics 0+unknown documentation</title>
+  <title>pydra.engine.workers module &mdash; Pydra: A simple dataflow engine with scalable semantics 0.5 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0
+                0.5
               </div>
             
           
@@ -205,7 +205,8 @@
 <dt id="pydra.engine.workers.DaskWorker">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">DaskWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DaskWorker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.Worker" title="pydra.engine.workers.Worker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.Worker</span></code></a></p>
-<p>A worker to execute in parallel using Python’s concurrent futures.</p>
+<p>A worker to execute in parallel using Dask.distributed.
+This is an experimental implementation with limited testing.</p>
 <dl class="py method">
 <dt id="pydra.engine.workers.DaskWorker.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DaskWorker.close" title="Permalink to this definition">¶</a></dt>
@@ -400,6 +401,7 @@ py:attr:<cite>DistributedWorker.max_jobs</cite>.</p>
             <dd><a href="../../0.3/api/pydra.engine.workers.html">0.3</a></dd>
             <dd><a href="../../0.3.1/api/pydra.engine.workers.html">0.3.1</a></dd>
             <dd><a href="../../0.4/api/pydra.engine.workers.html">0.4</a></dd>
+            <dd><a href="../../0.5/api/pydra.engine.workers.html">0.5</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
