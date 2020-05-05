@@ -202,6 +202,31 @@
 </dd></dl>
 
 <dl class="py class">
+<dt id="pydra.engine.workers.DaskWorker">
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">DaskWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DaskWorker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.Worker" title="pydra.engine.workers.Worker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.Worker</span></code></a></p>
+<p>A worker to execute in parallel using Python’s concurrent futures.</p>
+<dl class="py method">
+<dt id="pydra.engine.workers.DaskWorker.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DaskWorker.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finalize the internal pool of tasks.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.workers.DaskWorker.exec_dask">
+<em class="property">async </em><code class="sig-name descname">exec_dask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DaskWorker.exec_dask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a task (coroutine wrapper).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.workers.DaskWorker.run_el">
+<code class="sig-name descname">run_el</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">runnable</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DaskWorker.run_el" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a task.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt id="pydra.engine.workers.DistributedWorker">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.workers.</code><code class="sig-name descname">DistributedWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_jobs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.workers.DistributedWorker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.workers.Worker" title="pydra.engine.workers.Worker"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.workers.Worker</span></code></a></p>
