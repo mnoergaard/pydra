@@ -215,15 +215,18 @@
 <dl class="py method">
 <dt id="pydra.engine.core.TaskBase.checksum">
 <em class="property">property </em><code class="sig-name descname">checksum</code><a class="headerlink" href="#pydra.engine.core.TaskBase.checksum" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate a unique checksum of this task.</p>
+<dd><p>Calculates the unique checksum of the task.
+Used to create specific directory name for task that are run;
+and to create nodes checksums needed for graph checkums
+(before the tasks have inputs etc.)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.core.TaskBase.checksum_states">
 <code class="sig-name descname">checksum_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state_index</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.core.TaskBase.checksum_states" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate a checksum for the specific state or all of the states.</p>
-<p>Replaces lists in the inputs fields with a specific values for states.
-Can be used only for tasks with a state.</p>
+<dd><p>Calculate a checksum for the specific state or all of the states of the task.
+Replaces lists in the inputs fields with a specific values for states.
+Used to recreate names of the task directories,</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>state_index</strong> – TODO</p>
@@ -352,6 +355,15 @@ if “ind” result is returned together with indices of the input fields</p></l
 <dd class="field-odd"><p><strong>task</strong> (<a class="reference internal" href="#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">TaskBase</span></code></a>) – The task to be added.</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.core.Workflow.checksum">
+<em class="property">property </em><code class="sig-name descname">checksum</code><a class="headerlink" href="#pydra.engine.core.Workflow.checksum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the unique checksum of the task.
+Used to create specific directory name for task that are run;
+and to create nodes checksums needed for graph checkums
+(before the tasks have inputs etc.)</p>
 </dd></dl>
 
 <dl class="py method">

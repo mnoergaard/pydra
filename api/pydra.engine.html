@@ -305,6 +305,15 @@ and returns None.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="pydra.engine.Workflow.checksum">
+<em class="property">property </em><code class="sig-name descname">checksum</code><a class="headerlink" href="#pydra.engine.Workflow.checksum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the unique checksum of the task.
+Used to create specific directory name for task that are run;
+and to create nodes checksums needed for graph checkums
+(before the tasks have inputs etc.)</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pydra.engine.Workflow.create_connections">
 <code class="sig-name descname">create_connections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow.create_connections" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add and connect a particular task to existing nodes in the workflow.</p>
