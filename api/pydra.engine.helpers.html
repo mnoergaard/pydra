@@ -197,26 +197,6 @@
 </dd></dl>
 
 <dl class="py function">
-<dt id="pydra.engine.helpers.create_pyscript">
-<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">create_pyscript</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">script_path</span></em>, <em class="sig-param"><span class="n">checksum</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.create_pyscript" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create standalone script for task execution in a different environment.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>script_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">os.pathlike</span></code>) – Path to the script.</p></li>
-<li><p><strong>checksum</strong> (<em>str</em>) – Task checksum.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>pyscript</strong> – Execution script</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">File</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt id="pydra.engine.helpers.ensure_list">
 <code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">ensure_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">tuple2list</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.ensure_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list whatever the input object is.</p>
@@ -315,6 +295,20 @@ loop is created and set as the current event loop.</p>
 </dd></dl>
 
 <dl class="py function">
+<dt id="pydra.engine.helpers.load_and_run">
+<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">load_and_run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_pkl</span></em>, <em class="sig-param"><span class="n">ind</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">submitter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">plugin</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.load_and_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>loading a task from a pickle file, settings proper input
+and running the task</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pydra.engine.helpers.load_and_run_async">
+<em class="property">async </em><code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">load_and_run_async</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_pkl</span></em>, <em class="sig-param"><span class="n">ind</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">submitter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rerun</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.load_and_run_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>loading a task from a pickle file, settings proper input
+and running the workflow</p>
+</dd></dl>
+
+<dl class="py function">
 <dt id="pydra.engine.helpers.load_result">
 <code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">load_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">checksum</span></em>, <em class="sig-param"><span class="n">cache_locations</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.load_result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restore a result from the cache.</p>
@@ -327,6 +321,12 @@ the checksum will be looked for.</p></li>
 </ul>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pydra.engine.helpers.load_task">
+<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">load_task</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_pkl</span></em>, <em class="sig-param"><span class="n">ind</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.load_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>loading a task from a pickle file, settings proper input for the specific ind</p>
 </dd></dl>
 
 <dl class="py function">
@@ -402,7 +402,7 @@ the checksum will be looked for.</p></li>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers.save">
-<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_path</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.8)">pathlib.Path</a></span></em>, <em class="sig-param"><span class="n">result</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">task</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.save" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_path</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.8)">pathlib.Path</a></span></em>, <em class="sig-param"><span class="n">result</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">task</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name_prefix</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.save" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save a <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">TaskBase</span></code></a> object and/or results.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
