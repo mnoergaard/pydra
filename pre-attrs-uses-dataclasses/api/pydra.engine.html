@@ -179,7 +179,7 @@
 <p>The core of the workflow engine.</p>
 <dl class="py class">
 <dt id="pydra.engine.AuditFlag">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">AuditFlag</code><a class="headerlink" href="#pydra.engine.AuditFlag" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">AuditFlag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.AuditFlag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Flag" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Flag</span></code></a></p>
 <p>Auditing flags.</p>
 <dl class="py attribute">
@@ -287,7 +287,7 @@ and returns None.</p>
 
 <dl class="py class">
 <dt id="pydra.engine.Workflow">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Workflow</code><span class="sig-paren">(</span><em class="sig-param">name, audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;, cache_dir=None, cache_locations=None, input_spec: Union[List[str], pydra.engine.specs.BaseSpec, None] = None, messenger_args=None, messengers=None, output_spec: Optional[pydra.engine.specs.BaseSpec] = None, **kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Workflow</code><span class="sig-paren">(</span><em class="sig-param">name, audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;, cache_dir=None, cache_locations=None, input_spec: Optional[Union[List[str], pydra.engine.specs.BaseSpec]] = None, messenger_args=None, messengers=None, output_spec: Optional[pydra.engine.specs.BaseSpec] = None, **kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.core.TaskBase</span></code></a></p>
 <p>A composite task with structure of computational graph.</p>
 <dl class="py method">
