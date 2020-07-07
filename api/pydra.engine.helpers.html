@@ -371,6 +371,16 @@ the checksum will be looked for.</p></li>
 </dd></dl>
 
 <dl class="py function">
+<dt id="pydra.engine.helpers.position_adjustment">
+<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">position_adjustment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pos_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.position_adjustment" title="Permalink to this definition">¶</a></dt>
+<dd><p>sorting elements with the first element - position,
+the negative positions should go to the end of the list
+everything that has no position (i.e. it’s None),
+should go between elements with positive positions an with negative pos.
+Returns a list of sorted args.</p>
+</dd></dl>
+
+<dl class="py function">
 <dt id="pydra.engine.helpers.print_help">
 <code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">print_help</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.print_help" title="Permalink to this definition">¶</a></dt>
 <dd><p>Visit a task object and print its input/output interface.</p>
