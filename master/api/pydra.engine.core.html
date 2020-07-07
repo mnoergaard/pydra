@@ -260,6 +260,12 @@ Used to recreate names of the task directories,</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="pydra.engine.core.TaskBase.errored">
+<em class="property">property </em><code class="sig-name descname">errored</code><a class="headerlink" href="#pydra.engine.core.TaskBase.errored" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the task has raised an error</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pydra.engine.core.TaskBase.get_input_el">
 <code class="sig-name descname">get_input_el</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ind</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.core.TaskBase.get_input_el" title="Permalink to this definition">¶</a></dt>
 <dd><p>Collect all inputs required to run the node (for specific state element).</p>
@@ -383,19 +389,6 @@ and to create nodes checksums needed for graph checkums
 </dd></dl>
 
 <dl class="py method">
-<dt id="pydra.engine.core.Workflow.done_all_tasks">
-<em class="property">property </em><code class="sig-name descname">done_all_tasks</code><a class="headerlink" href="#pydra.engine.core.Workflow.done_all_tasks" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check if all tasks from the graph are done.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The fact that all tasks are reported as done
-doesn’t mean that results of the workflow
-are available.
-That can be checked with <code class="xref py py-meth docutils literal notranslate"><span class="pre">done()</span></code>.</p>
-</div>
-</dd></dl>
-
-<dl class="py method">
 <dt id="pydra.engine.core.Workflow.graph_sorted">
 <em class="property">property </em><code class="sig-name descname">graph_sorted</code><a class="headerlink" href="#pydra.engine.core.Workflow.graph_sorted" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a sorted graph representation of the workflow.</p>
@@ -501,6 +494,7 @@ That can be checked with <code class="xref py py-meth docutils literal notransla
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../fix-prov-context/api/pydra.engine.core.html">fix-prov-context</a></dd>
             <dd><a href="pydra.engine.core.html">master</a></dd>
             <dd><a href="../../pre-attrs-uses-dataclasses/api/pydra.engine.core.html">pre-attrs-uses-dataclasses</a></dd>
             <dd><a href="../../ref-etelemetry/api/pydra.engine.core.html">ref-etelemetry</a></dd>

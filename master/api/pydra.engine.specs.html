@@ -310,6 +310,17 @@
 <code class="sig-name descname">errored</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#pydra.engine.specs.Result.errored" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
+<dl class="py method">
+<dt id="pydra.engine.specs.Result.get_output_field">
+<code class="sig-name descname">get_output_field</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">field_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.specs.Result.get_output_field" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used in get_values in Workflow</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>field_name</strong> (<cite>str</cite>) – Name of field in LazyField object</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt id="pydra.engine.specs.Result.output">
 <code class="sig-name descname">output</code><em class="property">: ty.Optional<span class="p">[</span>ty.Any<span class="p">]</span></em><a class="headerlink" href="#pydra.engine.specs.Result.output" title="Permalink to this definition">¶</a></dt>
@@ -470,13 +481,14 @@
 <dl class="py attribute">
 <dt id="pydra.engine.specs.SpecInfo.bases">
 <code class="sig-name descname">bases</code><em class="property">: ty.Tuple<span class="p">[</span>ty.Type<span class="p">]</span></em><a class="headerlink" href="#pydra.engine.specs.SpecInfo.bases" title="Permalink to this definition">¶</a></dt>
-<dd><p>Keeps track of this specification inheritance.</p>
+<dd><p>Keeps track of specification inheritance.
+Should be a tuple containing at least one BaseSpec</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt id="pydra.engine.specs.SpecInfo.fields">
 <code class="sig-name descname">fields</code><em class="property">: ty.List<span class="p">[</span>ty.Tuple<span class="p">]</span></em><a class="headerlink" href="#pydra.engine.specs.SpecInfo.fields" title="Permalink to this definition">¶</a></dt>
-<dd><p>List of names of fields (inputs or outputs).</p>
+<dd><p>List of names of fields (can be inputs or outputs).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -598,6 +610,7 @@
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../fix-prov-context/api/pydra.engine.specs.html">fix-prov-context</a></dd>
             <dd><a href="pydra.engine.specs.html">master</a></dd>
             <dd><a href="../../pre-attrs-uses-dataclasses/api/pydra.engine.specs.html">pre-attrs-uses-dataclasses</a></dd>
             <dd><a href="../../ref-etelemetry/api/pydra.engine.specs.html">ref-etelemetry</a></dd>

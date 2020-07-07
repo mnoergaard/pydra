@@ -240,7 +240,7 @@ but runnable objects are the same.</p>
 
 <dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.remove_nodes">
-<code class="sig-name descname">remove_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_nodes" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">remove_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span></em>, <em class="sig-param"><span class="n">check_ready</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mark nodes for removal from the graph, re-sorting if needed.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -252,7 +252,10 @@ are removed.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of nodes to be marked for removal.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of nodes to be marked for removal.</p></li>
+<li><p><strong>check_ready</strong> (:obj: <cite>bool</cite>) – checking if the node is ready to be removed</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -267,6 +270,24 @@ are removed.</p>
 <dd class="field-odd"><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of nodes which connections are to be removed.</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.remove_previous_connections">
+<code class="sig-name descname">remove_previous_connections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_previous_connections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove connections that the node has with predecessors.</p>
+<p>Also prunes the nodes from <code class="docutils literal notranslate"><span class="pre">_node_wip</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of nodes which connections are to be removed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.remove_successors_nodes">
+<code class="sig-name descname">remove_successors_nodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.remove_successors_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removing all the nodes that follow the node</p>
 </dd></dl>
 
 <dl class="py method">
@@ -359,6 +380,7 @@ previously sorted list.</p>
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../fix-prov-context/api/pydra.engine.graph.html">fix-prov-context</a></dd>
             <dd><a href="pydra.engine.graph.html">master</a></dd>
             <dd><a href="../../pre-attrs-uses-dataclasses/api/pydra.engine.graph.html">pre-attrs-uses-dataclasses</a></dd>
             <dd><a href="../../ref-etelemetry/api/pydra.engine.graph.html">ref-etelemetry</a></dd>
