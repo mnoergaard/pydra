@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pydra.engine package &mdash; Pydra: A simple dataflow engine with scalable semantics 0+unknown documentation</title>
+  <title>pydra.engine package &mdash; Pydra: A simple dataflow engine with scalable semantics 0.6.2 documentation</title>
   
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0
+                0.6.2
               </div>
             
           
@@ -173,9 +173,12 @@
   
 
 
+    
+    
 
 
 
+    <p class="scv-banner scv-sphinx_rtd_theme"><a href="../master/api/pydra.engine.html"><b>Warning:</b> This document is for an old version of Pydra: A simple dataflow engine with scalable semantics. The main version is master.</a></p>
 <div class="section" id="module-pydra.engine">
 <span id="pydra-engine-package"></span><h1>pydra.engine package<a class="headerlink" href="#module-pydra.engine" title="Permalink to this headline">¶</a></h1>
 <p>The core of the workflow engine.</p>
@@ -295,7 +298,7 @@ and returns None.</p>
 
 <dl class="py class">
 <dt id="pydra.engine.Workflow">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Workflow</code><span class="sig-paren">(</span><em class="sig-param">name, audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;, cache_dir=None, cache_locations=None, input_spec: Optional[Union[List[str], pydra.engine.specs.SpecInfo, pydra.engine.specs.BaseSpec]] = None, messenger_args=None, messengers=None, output_spec: Optional[Union[pydra.engine.specs.SpecInfo, pydra.engine.specs.BaseSpec]] = None, rerun=False, propagate_rerun=True, **kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Workflow</code><span class="sig-paren">(</span><em class="sig-param">name, audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;, cache_dir=None, cache_locations=None, input_spec: Optional[Union[List[str], pydra.engine.specs.BaseSpec]] = None, messenger_args=None, messengers=None, output_spec: Optional[pydra.engine.specs.BaseSpec] = None, rerun=False, propagate_rerun=True, **kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Workflow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.core.TaskBase</span></code></a></p>
 <p>A composite task with structure of computational graph.</p>
 <dl class="py method">
@@ -327,6 +330,19 @@ and to create nodes checksums needed for graph checkums
 <dd class="field-odd"><p><strong>task</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">TaskBase</span></code>) – The task to be added.</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.Workflow.done_all_tasks">
+<em class="property">property </em><code class="sig-name descname">done_all_tasks</code><a class="headerlink" href="#pydra.engine.Workflow.done_all_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if all tasks from the graph are done.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The fact that all tasks are reported as done
+doesn’t mean that results of the workflow
+are available.
+That can be checked with <code class="xref py py-meth docutils literal notranslate"><span class="pre">done()</span></code>.</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -421,7 +437,7 @@ and to create nodes checksums needed for graph checkums
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: master
+        v: 0.6.2
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
@@ -433,13 +449,13 @@ and to create nodes checksums needed for graph checkums
             <dd><a href="../0.5/api/pydra.engine.html">0.5</a></dd>
             <dd><a href="../0.6/api/pydra.engine.html">0.6</a></dd>
             <dd><a href="../0.6.1/api/pydra.engine.html">0.6.1</a></dd>
+            <dd><a href="../0.6.2/api/pydra.engine.html">0.6.2</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="../fix-prov-context/api/pydra.engine.html">fix-prov-context</a></dd>
+            <dd><a href="../maint_0.6.x/api/pydra.engine.html">maint/0.6.x</a></dd>
             <dd><a href="../master/api/pydra.engine.html">master</a></dd>
             <dd><a href="../pre-attrs-uses-dataclasses/api/pydra.engine.html">pre-attrs-uses-dataclasses</a></dd>
-            <dd><a href="../ref-etelemetry/api/pydra.engine.html">ref-etelemetry</a></dd>
         </dl>
     </div>
 </div>
