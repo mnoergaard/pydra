@@ -90,17 +90,18 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.6.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">0.6</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">0.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">0.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">0.3.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">0.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">0.2.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">0.2.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">0.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10">0.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11">0.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.6.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.6.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">0.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.3.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">0.2.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">0.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">0.0.1</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Library API (application programmer interface)</a></li>
@@ -178,7 +179,14 @@
 <div class="section" id="release-notes">
 <h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>0.6.1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>0.6.2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use pkgutil to declare <code class="docutils literal notranslate"><span class="pre">ppydra.tasks</span></code> as a namespace package, ensuring better support for
+editable mode.</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>0.6.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Add <code class="docutils literal notranslate"><span class="pre">pydra.tasks</span></code> namespace package to enable separate packages of <code class="docutils literal notranslate"><span class="pre">Task</span></code>s to be
 installed into <code class="docutils literal notranslate"><span class="pre">pydra.tasks</span></code>.</p></li>
@@ -187,8 +195,8 @@ other tasks already added to workflow</p></li>
 <li><p>Mention <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> in README</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>0.6<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>0.6<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>removing the tutorial to a <a class="reference external" href="https://github.com/nipype/pydra-tutorial">separate repo</a></p></li>
 <li><p>adding windows tests to codecov</p></li>
@@ -204,8 +212,8 @@ other tasks already added to workflow</p></li>
 <li><p>fixing <code class="docutils literal notranslate"><span class="pre">make_class</span></code> so the <code class="docutils literal notranslate"><span class="pre">Output</span></code> is properly formatted</p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h2>0.5<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>0.5<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>fixing <code class="docutils literal notranslate"><span class="pre">hash_dir</span></code> function</p></li>
 <li><p>adding <code class="docutils literal notranslate"><span class="pre">get_available_cpus</span></code> to get the number of CPUs available to the current process or available on the system</p></li>
@@ -217,8 +225,8 @@ other tasks already added to workflow</p></li>
 <li><p>adding an experimental implementation of Dask Worker (limited testing with ci)</p></li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h2>0.4<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>0.4<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>reorganization of the <code class="docutils literal notranslate"><span class="pre">State</span></code> class, fixing small issues with the class</p></li>
 <li><p>fixing some paths issues on windows os</p></li>
@@ -228,8 +236,8 @@ other tasks already added to workflow</p></li>
 <li><p>adding <code class="docutils literal notranslate"><span class="pre">hash_dir</span></code> to calculate hash for <code class="docutils literal notranslate"><span class="pre">Directory</span></code> type</p></li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h2>0.3.1<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>0.3.1<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>passing <code class="docutils literal notranslate"><span class="pre">wf.cache_locations</span></code> to the task</p></li>
 <li><p>using <code class="docutils literal notranslate"><span class="pre">rerun</span></code> from submitter to all task</p></li>
@@ -238,8 +246,8 @@ other tasks already added to workflow</p></li>
 <li><p>adding <code class="docutils literal notranslate"><span class="pre">cont_dim</span></code> to specify dimensionality of the input variables (how much the input is nested)</p></li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h2>0.3<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>0.3<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>adding sphinx documentation</p></li>
 <li><p>moving from <code class="docutils literal notranslate"><span class="pre">dataclasses</span></code> to <code class="docutils literal notranslate"><span class="pre">attrs</span></code></p></li>
@@ -250,20 +258,20 @@ other tasks already added to workflow</p></li>
 <li><p>using <code class="docutils literal notranslate"><span class="pre">attr.NOTHING</span></code> for input that is not set</p></li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h2>0.2.2<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>0.2.2<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>supporting tuple as a single element of an input</p></li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h2>0.2.1<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2>0.2.1<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>fixing: nodes with states and input fields (from splitter) that are empty were failing</p></li>
 </ul>
 </div>
-<div class="section" id="id9">
-<h2>0.2<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>0.2<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><dl class="simple">
 <dt>big changes in <code class="docutils literal notranslate"><span class="pre">ShellTask</span></code>, <code class="docutils literal notranslate"><span class="pre">DockerTask</span></code> and <code class="docutils literal notranslate"><span class="pre">SingularityTask</span></code></dt><dd><ul>
@@ -286,8 +294,8 @@ other tasks already added to workflow</p></li>
 <li><p>adding <code class="docutils literal notranslate"><span class="pre">etelementry</span></code> support</p></li>
 </ul>
 </div>
-<div class="section" id="id10">
-<h2>0.1<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>0.1<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Core dataflow creation and management API</p></li>
 <li><dl class="simple">
@@ -301,8 +309,8 @@ other tasks already added to workflow</p></li>
 <li><p>Notebooks for Pydra concepts</p></li>
 </ul>
 </div>
-<div class="section" id="id11">
-<h2>0.0.1<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h2>0.0.1<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>Initial Pydra Dataflow Engine release.</p>
 </div>
 </div>
