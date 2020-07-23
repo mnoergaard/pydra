@@ -228,6 +228,12 @@
 <li><p><strong>append</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Do not truncate file when opening (i.e. append to it).</p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the unique identifier used in the file’s name.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></p>
+</dd>
 </dl>
 </dd></dl>
 
@@ -254,7 +260,7 @@
 <dl class="py method">
 <dt id="pydra.utils.messenger.PrintMessenger.send">
 <code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.utils.messenger.PrintMessenger.send" title="Permalink to this definition">¶</a></dt>
-<dd><p>Send to standard output.</p>
+<dd><p>Send the message to standard output.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p>
@@ -276,6 +282,12 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The status code from the <cite>request.post</cite></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -322,7 +334,16 @@
 <dl class="py function">
 <dt id="pydra.utils.messenger.collect_messages">
 <code class="sig-prename descclassname">pydra.utils.messenger.</code><code class="sig-name descname">collect_messages</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">collected_path</span></em>, <em class="sig-param"><span class="n">message_path</span></em>, <em class="sig-param"><span class="n">ld_op</span><span class="o">=</span><span class="default_value">'compact'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.utils.messenger.collect_messages" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gather messages.</p>
+<dd><p>Compile all messages into a single provenance graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>collected_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">os.pathlike</span></code>) – A place to write all of the collected messages. (?TODO)</p></li>
+<li><p><strong>message_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">os.pathlike</span></code>) – A path with the message file (?TODO)</p></li>
+<li><p><strong>ld_op</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – Option used by pld.jsonld</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
@@ -334,7 +355,21 @@
 <dl class="py function">
 <dt id="pydra.utils.messenger.make_message">
 <code class="sig-prename descclassname">pydra.utils.messenger.</code><code class="sig-name descname">make_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">context</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.utils.messenger.make_message" title="Permalink to this definition">¶</a></dt>
-<dd><p>Build a message.</p>
+<dd><p>Build a message using the specific context</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obj</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – A dictionary containing the non-context information of a message record.</p></li>
+<li><p><strong>context</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>, optional) – Dictionary with the link to the context file or containing a JSON-LD context.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The message with the context.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">

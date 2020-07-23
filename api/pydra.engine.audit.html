@@ -192,7 +192,13 @@
 <dd><p>Determine whether auditing is enabled for a particular flag.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>flag</strong> – TODO</p>
+<dd class="field-odd"><p><strong>flag</strong> (:obj: <cite>bool</cite>) – The flag that is checked.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Boolean AND for self.oudit_flags and flag</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -204,8 +210,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>message</strong> – TODO</p></li>
-<li><p><strong>flags</strong> – TODO</p></li>
+<li><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – A message in Pydra is a JSON-LD message object.</p></li>
+<li><p><strong>flags</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>, optional) – If True and self.audit_flag, the message is sent.</p></li>
 </ul>
 </dd>
 </dl>
