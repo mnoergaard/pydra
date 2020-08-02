@@ -209,6 +209,14 @@ using values from inputs and updating with value_update if provided</p>
 </dd></dl>
 
 <dl class="py function">
+<dt id="pydra.engine.helpers.custom_validator">
+<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">custom_validator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instance</span></em>, <em class="sig-param"><span class="n">attribute</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.custom_validator" title="Permalink to this definition">¶</a></dt>
+<dd><p>simple custom validation
+take into account ty.Union, ty.List, ty.Dict (but only one level depth)
+adding an additional validator, if allowe_values provided</p>
+</dd></dl>
+
+<dl class="py function">
 <dt id="pydra.engine.helpers.ensure_list">
 <code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">ensure_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">tuple2list</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.ensure_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list whatever the input object is.</p>
