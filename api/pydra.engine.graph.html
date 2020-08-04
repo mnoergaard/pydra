@@ -183,13 +183,19 @@
 <p>Data structure to support <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.Workflow" title="pydra.engine.core.Workflow"><code class="xref py py-class docutils literal notranslate"><span class="pre">Workflow</span></code></a> tasks.</p>
 <dl class="py class">
 <dt id="pydra.engine.graph.DiGraph">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.graph.</code><code class="sig-name descname">DiGraph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.graph.</code><code class="sig-name descname">DiGraph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">nodes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A simple Directed Graph object.</p>
 <dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.add_edges">
 <code class="sig-name descname">add_edges</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_edges</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.add_edges" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add new edges and sort the new graph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.add_edges_description">
+<code class="sig-name descname">add_edges_description</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_edge_details</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.add_edges_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>adding detailed description of the connections, filling _nodes_details</p>
 </dd></dl>
 
 <dl class="py method">
@@ -215,6 +221,25 @@ but runnable objects are the same.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.create_dotfile_detailed">
+<code class="sig-name descname">create_dotfile_detailed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outdir</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'graph_det'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.create_dotfile_detailed" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a detailed dotfile (detailed connections - input/output fields,
+but no nested structure)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.create_dotfile_nested">
+<code class="sig-name descname">create_dotfile_nested</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outdir</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'graph'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.create_dotfile_nested" title="Permalink to this definition">¶</a></dt>
+<dd><p>dotfile that includes the nested structures for workflows</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.create_dotfile_simple">
+<code class="sig-name descname">create_dotfile_simple</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outdir</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'graph'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.create_dotfile_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a simple dotfile (no nested structure)</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.edges">
 <em class="property">property </em><code class="sig-name descname">edges</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.edges" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of the links between nodes.</p>
@@ -227,9 +252,23 @@ but runnable objects are the same.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.export_graph">
+<code class="sig-name descname">export_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dotfile</span></em>, <em class="sig-param"><span class="n">ext</span><span class="o">=</span><span class="default_value">'png'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.graph.DiGraph.export_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>exporting dotfile to other format, equires the dot command</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pydra.engine.graph.DiGraph.nodes">
 <em class="property">property </em><code class="sig-name descname">nodes</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of the nodes currently contained in the graph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pydra.engine.graph.DiGraph.nodes_details">
+<em class="property">property </em><code class="sig-name descname">nodes_details</code><a class="headerlink" href="#pydra.engine.graph.DiGraph.nodes_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>dictionary with details of the nodes
+for each task, there are inputs/outputs and connections
+(with input/output fields names)</p>
 </dd></dl>
 
 <dl class="py method">
