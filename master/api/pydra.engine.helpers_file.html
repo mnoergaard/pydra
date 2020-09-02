@@ -412,14 +412,14 @@ leading to inconsistent behavior and <code class="docutils literal notranslate">
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.template_update">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">template_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">map_copyfiles</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">template_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">output_dir</span></em>, <em class="sig-param"><span class="n">map_copyfiles</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update all templates that are present in the input spec.</p>
 <p>Should be run when all inputs used in the templates are already set.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.template_update_single">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">template_update_single</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">field</span></em>, <em class="sig-param"><span class="n">inputs_dict</span></em>, <em class="sig-param"><span class="n">spec_type</span><span class="o">=</span><span class="default_value">'input'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update_single" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">template_update_single</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">field</span></em>, <em class="sig-param"><span class="n">inputs_dict</span></em>, <em class="sig-param"><span class="n">output_dir</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">spec_type</span><span class="o">=</span><span class="default_value">'input'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update_single" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update a single template from the input_spec or output_spec
 based on the value from inputs_dict
 (checking the types of the fields, that have “output_file_template)”</p>
