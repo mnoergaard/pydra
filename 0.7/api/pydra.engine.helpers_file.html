@@ -226,8 +226,8 @@ link is created.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>originalfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – full path to original file</p></li>
-<li><p><strong>newfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – full path to new file</p></li>
+<li><p><strong>originalfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – full path to original file</p></li>
+<li><p><strong>newfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – full path to new file</p></li>
 <li><p><strong>copy</strong> (<em>Bool</em>) – specifies whether to copy or symlink files
 (default=False) but only for POSIX systems</p></li>
 <li><p><strong>use_hardlink</strong> (<em>Bool</em>) – specifies whether to hard-link files, when able
@@ -240,7 +240,7 @@ link is created.</p>
 <dd class="field-even"><p></p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -270,7 +270,7 @@ files.</p></li>
 <dd class="field-even"><p></p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -290,7 +290,7 @@ files.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – File name to find related filetypes of.</p></li>
+<li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – File name to find related filetypes of.</p></li>
 <li><p><strong>include_this_file</strong> (<em>bool</em>) – If true, output includes the input filename.</p></li>
 </ul>
 </dd>
@@ -307,11 +307,11 @@ directory is traversed recursively.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dirpath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to directory.</p></li>
+<li><p><strong>dirpath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to directory.</p></li>
 <li><p><strong>crypto</strong> (:obj: <cite>function</cite>) – cryptographic hash functions</p></li>
-<li><p><strong>ignore_hidden_files</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <cite>True</cite>, ignore filenames that begin with <cite>.</cite>.</p></li>
-<li><p><strong>ignore_hidden_dirs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <cite>True</cite>, ignore files in directories that begin with <cite>.</cite>.</p></li>
-<li><p><strong>raise_notfound</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <cite>True</cite> and <cite>dirpath</cite> does not exist, raise <cite>FileNotFound</cite> exception. If
+<li><p><strong>ignore_hidden_files</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <cite>True</cite>, ignore filenames that begin with <cite>.</cite>.</p></li>
+<li><p><strong>ignore_hidden_dirs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <cite>True</cite>, ignore files in directories that begin with <cite>.</cite>.</p></li>
+<li><p><strong>raise_notfound</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <cite>True</cite> and <cite>dirpath</cite> does not exist, raise <cite>FileNotFound</cite> exception. If
 <cite>False</cite> and <cite>dirpath</cite> does not exist, return <cite>None</cite>.</p></li>
 </ul>
 </dd>
@@ -319,7 +319,7 @@ directory is traversed recursively.</p>
 <dd class="field-even"><p><strong>hash</strong> – Hash of the directory contents.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -336,13 +336,13 @@ directory is traversed recursively.</p>
 <dd><p>Check if item is a container (list, tuple, dict, set).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>item</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>) – Input object to check.</p>
+<dd class="field-odd"><p><strong>item</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>) – Input object to check.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><strong>output</strong> – <code class="docutils literal notranslate"><span class="pre">True</span></code> if container <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -390,13 +390,13 @@ leading to inconsistent behavior and <code class="docutils literal notranslate">
 <dd><p>Split a filename into parts: path, base filename and extension.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – file or path name</p>
+<dd class="field-odd"><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – file or path name</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>pth</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – base path from fname</p></li>
-<li><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – filename from fname, without extension</p></li>
-<li><p><strong>ext</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – file extension from fname</p></li>
+<li><p><strong>pth</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – base path from fname</p></li>
+<li><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – filename from fname, without extension</p></li>
+<li><p><strong>ext</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – file extension from fname</p></li>
 </ul>
 </p>
 </dd>

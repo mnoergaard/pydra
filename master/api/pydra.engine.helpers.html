@@ -203,8 +203,8 @@ using values from inputs and updating with value_update if provided</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Task name.</p></li>
-<li><p><strong>inputs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – String of inputs.</p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Task name.</p></li>
+<li><p><strong>inputs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – String of inputs.</p></li>
 </ul>
 </dd>
 </dl>
@@ -249,8 +249,8 @@ is used.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>cmd</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a>) – The command line to be executed.</p></li>
-<li><p><strong>strip</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – TODO</p></li>
+<li><p><strong>cmd</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a>) – The command line to be executed.</p></li>
+<li><p><strong>strip</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – TODO</p></li>
 </ul>
 </dd>
 </dl>
@@ -283,7 +283,7 @@ available, the total number of CPUs on the system.</p>
 <dd class="field-odd"><p><strong>n_proc</strong> – The number of available CPUs.</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -337,8 +337,8 @@ and running the workflow</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>checksum</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Unique identifier of the task to be loaded.</p></li>
-<li><p><strong>cache_locations</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">os.pathlike</span></code>) – List of cache directories, in order of priority, where
+<li><p><strong>checksum</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Unique identifier of the task to be loaded.</p></li>
+<li><p><strong>cache_locations</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">os.pathlike</span></code>) – List of cache directories, in order of priority, where
 the checksum will be looked for.</p></li>
 </ul>
 </dd>
@@ -425,7 +425,7 @@ Returns a list of sorted args.</p>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers.save">
-<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_path</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.8)">pathlib.Path</a></span></em>, <em class="sig-param"><span class="n">result</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">task</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name_prefix</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.save" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.helpers.</code><code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">task_path</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.9)">pathlib.Path</a></span></em>, <em class="sig-param"><span class="n">result</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">task</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name_prefix</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers.save" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save a <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">TaskBase</span></code></a> object and/or results.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

@@ -187,7 +187,7 @@
 <dl class="py class">
 <dt id="pydra.engine.AuditFlag">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">AuditFlag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.AuditFlag" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Flag" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Flag</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Flag" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Flag</span></code></a></p>
 <p>Auditing flags.</p>
 <dl class="py attribute">
 <dt id="pydra.engine.AuditFlag.ALL">
@@ -256,7 +256,7 @@ Returns a list if the task has a state.</p>
 <dl class="py class">
 <dt id="pydra.engine.Submitter">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.engine.</code><code class="sig-name descname">Submitter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plugin</span><span class="o">=</span><span class="default_value">'cf'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.Submitter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Send a task to the execution backend.</p>
 <dl class="py method">
 <dt id="pydra.engine.Submitter.close">
@@ -285,7 +285,7 @@ and returns None.</p>
 <dd class="field-even"><p><strong>futures</strong> – Coroutines for <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">TaskBase</span></code></a> execution.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.8)">set</a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.9)">set</a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -331,7 +331,7 @@ and to create nodes checksums needed for graph checkums
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>task</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">TaskBase</span></code>) – The task to be added.</p></li>
-<li><p><strong>detailed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If True, <cite>add_edges_description</cite> is run for self.graph to add
+<li><p><strong>detailed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If True, <cite>add_edges_description</cite> is run for self.graph to add
 a detailed descriptions of the connections (input/output fields names)</p></li>
 </ul>
 </dd>

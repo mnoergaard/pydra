@@ -185,7 +185,7 @@
 <dl class="py class">
 <dt id="pydra.utils.messenger.AuditFlag">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.utils.messenger.</code><code class="sig-name descname">AuditFlag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.utils.messenger.AuditFlag" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Flag" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Flag</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Flag" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Flag</span></code></a></p>
 <p>Auditing flags.</p>
 <dl class="py attribute">
 <dt id="pydra.utils.messenger.AuditFlag.ALL">
@@ -225,8 +225,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p></li>
-<li><p><strong>append</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Do not truncate file when opening (i.e. append to it).</p></li>
+<li><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p></li>
+<li><p><strong>append</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Do not truncate file when opening (i.e. append to it).</p></li>
 </ul>
 </dd>
 </dl>
@@ -237,7 +237,7 @@
 <dl class="py class">
 <dt id="pydra.utils.messenger.Messenger">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.utils.messenger.</code><code class="sig-name descname">Messenger</code><a class="headerlink" href="#pydra.utils.messenger.Messenger" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Base messenger class.</p>
 <dl class="py method">
 <dt id="pydra.utils.messenger.Messenger.send">
@@ -258,7 +258,7 @@
 <dd><p>Send to standard output.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p>
+<dd class="field-odd"><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -276,7 +276,7 @@
 <dd><p>Append message to file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p>
+<dd class="field-odd"><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code></a>) – The message to be printed.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -286,7 +286,7 @@
 <dl class="py class">
 <dt id="pydra.utils.messenger.RuntimeHooks">
 <em class="property">class </em><code class="sig-prename descclassname">pydra.utils.messenger.</code><code class="sig-name descname">RuntimeHooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.utils.messenger.RuntimeHooks" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
 <p>Allowed points to hook into the process.</p>
 <dl class="py attribute">
 <dt id="pydra.utils.messenger.RuntimeHooks.resource_monitor_post_stop">
