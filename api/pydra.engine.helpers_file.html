@@ -298,7 +298,7 @@ files.</p></li>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.hash_dir">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">hash_dir</code><span class="sig-paren">(</span><em class="sig-param">dirpath</em>, <em class="sig-param">crypto=&lt;built-in function openssl_sha256&gt;</em>, <em class="sig-param">ignore_hidden_files=False</em>, <em class="sig-param">ignore_hidden_dirs=False</em>, <em class="sig-param">raise_notfound=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_dir" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">hash_dir</code><span class="sig-paren">(</span><em class="sig-param">dirpath</em>, <em class="sig-param">crypto=&lt;built-in function openssl_sha256&gt;</em>, <em class="sig-param">ignore_hidden_files=False</em>, <em class="sig-param">ignore_hidden_dirs=False</em>, <em class="sig-param">raise_notfound=True</em>, <em class="sig-param">precalculated=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_dir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute hash of directory contents.</p>
 <p>This function computes the hash of every file in directory <cite>dirpath</cite> and then
 computes the hash of that list of hashes to return a single hash value. The
@@ -325,7 +325,7 @@ directory is traversed recursively.</p>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.hash_file">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">hash_file</code><span class="sig-paren">(</span><em class="sig-param">afile</em>, <em class="sig-param">chunk_len=8192</em>, <em class="sig-param">crypto=&lt;built-in function openssl_sha256&gt;</em>, <em class="sig-param">raise_notfound=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">hash_file</code><span class="sig-paren">(</span><em class="sig-param">afile</em>, <em class="sig-param">chunk_len=8192</em>, <em class="sig-param">crypto=&lt;built-in function openssl_sha256&gt;</em>, <em class="sig-param">raise_notfound=True</em>, <em class="sig-param">precalculated=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute hash of a file using ‘crypto’ module.</p>
 </dd></dl>
 
