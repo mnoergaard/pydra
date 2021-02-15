@@ -33,7 +33,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -189,7 +188,7 @@
 <p>Functions ported from Nipype 1, after removing parts that were related to py2.</p>
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.copyfile">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">copyfile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">originalfile</span></em>, <em class="sig-param"><span class="n">newfile</span></em>, <em class="sig-param"><span class="n">copy</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">create_new</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">use_hardlink</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">copy_related_files</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.copyfile" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">copyfile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">originalfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_new</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_hardlink</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy_related_files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.copyfile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Copy or link files.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">use_hardlink</span></code> is True, and the file can be hard-linked, then a
 link is created, instead of copying the file.</p>
@@ -250,13 +249,13 @@ link is created.</p>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.copyfile_input">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">copyfile_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">output_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.copyfile_input" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">copyfile_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.copyfile_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implement the base class method.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.copyfiles">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">copyfiles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filelist</span></em>, <em class="sig-param"><span class="n">dest</span></em>, <em class="sig-param"><span class="n">copy</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">create_new</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.copyfiles" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">copyfiles</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filelist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_new</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.copyfiles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Copy or symlink files in <code class="docutils literal notranslate"><span class="pre">filelist</span></code> to <code class="docutils literal notranslate"><span class="pre">dest</span></code> directory.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -280,13 +279,13 @@ files.</p></li>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.ensure_list">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">ensure_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.ensure_list" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">ensure_list</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.ensure_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list given either a string or a list.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.get_related_files">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">get_related_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">include_this_file</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.get_related_files" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">get_related_files</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_this_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.get_related_files" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of related files.</p>
 <p>As defined in <a class="reference internal" href="#pydra.engine.helpers_file.related_filetype_sets" title="pydra.engine.helpers_file.related_filetype_sets"><code class="xref py py-attr docutils literal notranslate"><span class="pre">related_filetype_sets</span></code></a>, for a filename
 (e.g., Nifti-Pair, Analyze (SPM), and AFNI files).</p>
@@ -302,7 +301,7 @@ files.</p></li>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.hash_dir">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">hash_dir</code><span class="sig-paren">(</span><em class="sig-param">dirpath</em>, <em class="sig-param">crypto=&lt;built-in function openssl_sha256&gt;</em>, <em class="sig-param">ignore_hidden_files=False</em>, <em class="sig-param">ignore_hidden_dirs=False</em>, <em class="sig-param">raise_notfound=True</em>, <em class="sig-param">precalculated=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_dir" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">hash_dir</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">dirpath</span></em>, <em class="sig-param"><span class="pre">crypto=&lt;built-in</span> <span class="pre">function</span> <span class="pre">openssl_sha256&gt;</span></em>, <em class="sig-param"><span class="pre">ignore_hidden_files=False</span></em>, <em class="sig-param"><span class="pre">ignore_hidden_dirs=False</span></em>, <em class="sig-param"><span class="pre">raise_notfound=True</span></em>, <em class="sig-param"><span class="pre">precalculated=None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_dir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute hash of directory contents.</p>
 <p>This function computes the hash of every file in directory <cite>dirpath</cite> and then
 computes the hash of that list of hashes to return a single hash value. The
@@ -329,13 +328,13 @@ directory is traversed recursively.</p>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.hash_file">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">hash_file</code><span class="sig-paren">(</span><em class="sig-param">afile</em>, <em class="sig-param">chunk_len=8192</em>, <em class="sig-param">crypto=&lt;built-in function openssl_sha256&gt;</em>, <em class="sig-param">raise_notfound=True</em>, <em class="sig-param">precalculated=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">hash_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">afile</span></em>, <em class="sig-param"><span class="pre">chunk_len=8192</span></em>, <em class="sig-param"><span class="pre">crypto=&lt;built-in</span> <span class="pre">function</span> <span class="pre">openssl_sha256&gt;</span></em>, <em class="sig-param"><span class="pre">raise_notfound=True</span></em>, <em class="sig-param"><span class="pre">precalculated=None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.hash_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute hash of a file using ‘crypto’ module.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.is_container">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">is_container</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.is_container" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">is_container</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.is_container" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if item is a container (list, tuple, dict, set).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -352,18 +351,18 @@ directory is traversed recursively.</p>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.is_existing_file">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">is_existing_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.is_existing_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">is_existing_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.is_existing_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>checking if an object is an existing file</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.is_local_file">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">is_local_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.is_local_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">is_local_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.is_local_file" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.on_cifs">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">on_cifs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.on_cifs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">on_cifs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.on_cifs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check whether a file path is on a CIFS filesystem mounted in a POSIX host.</p>
 <p>POSIX hosts are assumed to have the <code class="docutils literal notranslate"><span class="pre">mount</span></code> command.</p>
 <p>On Windows, Docker mounts host directories into containers through CIFS
@@ -377,13 +376,13 @@ leading to inconsistent behavior and <code class="docutils literal notranslate">
 
 <dl class="py data">
 <dt id="pydra.engine.helpers_file.related_filetype_sets">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">related_filetype_sets</code><em class="property"> = [('.hdr', '.img', '.mat'), ('.nii', '.mat'), ('.BRIK', '.HEAD')]</em><a class="headerlink" href="#pydra.engine.helpers_file.related_filetype_sets" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">related_filetype_sets</span></code><em class="property"> <span class="pre">=</span> <span class="pre">[('.hdr',</span> <span class="pre">'.img',</span> <span class="pre">'.mat'),</span> <span class="pre">('.nii',</span> <span class="pre">'.mat'),</span> <span class="pre">('.BRIK',</span> <span class="pre">'.HEAD')]</span></em><a class="headerlink" href="#pydra.engine.helpers_file.related_filetype_sets" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of neuroimaging file types that are to be interpreted together.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.split_filename">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">split_filename</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.split_filename" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">split_filename</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.split_filename" title="Permalink to this definition">¶</a></dt>
 <dd><p>Split a filename into parts: path, base filename and extension.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -416,14 +415,14 @@ leading to inconsistent behavior and <code class="docutils literal notranslate">
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.template_update">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">template_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">output_dir</span></em>, <em class="sig-param"><span class="n">map_copyfiles</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">template_update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_copyfiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update all templates that are present in the input spec.</p>
 <p>Should be run when all inputs used in the templates are already set.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_file.template_update_single">
-<code class="sig-prename descclassname">pydra.engine.helpers_file.</code><code class="sig-name descname">template_update_single</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">field</span></em>, <em class="sig-param"><span class="n">inputs_dict</span></em>, <em class="sig-param"><span class="n">output_dir</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">spec_type</span><span class="o">=</span><span class="default_value">'input'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update_single" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_file.</span></code><code class="sig-name descname"><span class="pre">template_update_single</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputs_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'input'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_file.template_update_single" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update a single template from the input_spec or output_spec
 based on the value from inputs_dict
 (checking the types of the fields, that have “output_file_template)”</p>

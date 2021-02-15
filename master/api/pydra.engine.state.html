@@ -33,7 +33,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -189,7 +188,7 @@
 <p>Keeping track of mapping and reduce operations over tasks.</p>
 <dl class="py class">
 <dt id="pydra.engine.state.State">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.state.</code><code class="sig-name descname">State</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">splitter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">combiner</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">other_states</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.state.</span></code><code class="sig-name descname"><span class="pre">State</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">splitter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combiner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_states</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A class that specifies a State of all tasks.</p>
 <blockquote>
@@ -204,7 +203,7 @@ if combiner is available.</p></li>
 </div></blockquote>
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#pydra.engine.state.State.name" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#pydra.engine.state.State.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>name of the state that is the same as a name of the task</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -215,7 +214,7 @@ if combiner is available.</p></li>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.splitter">
-<code class="sig-name descname">splitter</code><a class="headerlink" href="#pydra.engine.state.State.splitter" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">splitter</span></code><a class="headerlink" href="#pydra.engine.state.State.splitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>can be a str (name of a single input),
 tuple for scalar splitter, or list for outer splitter</p>
 <dl class="field-list simple">
@@ -227,7 +226,7 @@ tuple for scalar splitter, or list for outer splitter</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.splitter_rpn_compact">
-<code class="sig-name descname">splitter_rpn_compact</code><a class="headerlink" href="#pydra.engine.state.State.splitter_rpn_compact" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">splitter_rpn_compact</span></code><a class="headerlink" href="#pydra.engine.state.State.splitter_rpn_compact" title="Permalink to this definition">¶</a></dt>
 <dd><p>splitter in <abbr title="reverse Polish notation">RPN</abbr>, using a compact
 notation for splitter from previous states, e.g. _NA</p>
 <dl class="field-list simple">
@@ -239,7 +238,7 @@ notation for splitter from previous states, e.g. _NA</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.splitter_rpn">
-<code class="sig-name descname">splitter_rpn</code><a class="headerlink" href="#pydra.engine.state.State.splitter_rpn" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">splitter_rpn</span></code><a class="headerlink" href="#pydra.engine.state.State.splitter_rpn" title="Permalink to this definition">¶</a></dt>
 <dd><p>splitter represented in RPN,
 unwrapping splitters from previous states</p>
 <dl class="field-list simple">
@@ -251,7 +250,7 @@ unwrapping splitters from previous states</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.combiner">
-<code class="sig-name descname">combiner</code><a class="headerlink" href="#pydra.engine.state.State.combiner" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">combiner</span></code><a class="headerlink" href="#pydra.engine.state.State.combiner" title="Permalink to this definition">¶</a></dt>
 <dd><p>list of fields that should be combined
 (order is not important)</p>
 <dl class="field-list simple">
@@ -263,13 +262,13 @@ unwrapping splitters from previous states</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.splitter_final">
-<code class="sig-name descname">splitter_final</code><a class="headerlink" href="#pydra.engine.state.State.splitter_final" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">splitter_final</span></code><a class="headerlink" href="#pydra.engine.state.State.splitter_final" title="Permalink to this definition">¶</a></dt>
 <dd><p>final splitter that includes the combining process</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.other_states">
-<code class="sig-name descname">other_states</code><a class="headerlink" href="#pydra.engine.state.State.other_states" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">other_states</span></code><a class="headerlink" href="#pydra.engine.state.State.other_states" title="Permalink to this definition">¶</a></dt>
 <dd><p>used to create connections with previous states:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="n">name</span> <span class="n">of</span> <span class="n">a</span> <span class="n">previous</span> <span class="n">state</span><span class="p">:</span>
@@ -286,7 +285,7 @@ unwrapping splitters from previous states</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.inner_inputs">
-<code class="sig-name descname">inner_inputs</code><a class="headerlink" href="#pydra.engine.state.State.inner_inputs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">inner_inputs</span></code><a class="headerlink" href="#pydra.engine.state.State.inner_inputs" title="Permalink to this definition">¶</a></dt>
 <dd><p>used to create connections with previous states
 <code class="docutils literal notranslate"><span class="pre">{&quot;{self.name}.input</span> <span class="pre">name</span> <span class="pre">for</span> <span class="pre">current</span> <span class="pre">inp&quot;:</span> <span class="pre">previous</span> <span class="pre">state}</span></code></p>
 <dl class="field-list simple">
@@ -298,7 +297,7 @@ unwrapping splitters from previous states</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.states_ind">
-<code class="sig-name descname">states_ind</code><a class="headerlink" href="#pydra.engine.state.State.states_ind" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">states_ind</span></code><a class="headerlink" href="#pydra.engine.state.State.states_ind" title="Permalink to this definition">¶</a></dt>
 <dd><p>dictionary for every state that contains
 indices for all state inputs (i.e. inputs that are part of the splitter)</p>
 <dl class="field-list simple">
@@ -310,7 +309,7 @@ indices for all state inputs (i.e. inputs that are part of the splitter)</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.states_val">
-<code class="sig-name descname">states_val</code><a class="headerlink" href="#pydra.engine.state.State.states_val" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">states_val</span></code><a class="headerlink" href="#pydra.engine.state.State.states_val" title="Permalink to this definition">¶</a></dt>
 <dd><p>dictionary for every state that contains
 values for all state inputs (i.e. inputs that are part of the splitter)</p>
 <dl class="field-list simple">
@@ -322,7 +321,7 @@ values for all state inputs (i.e. inputs that are part of the splitter)</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.inputs_ind">
-<code class="sig-name descname">inputs_ind</code><a class="headerlink" href="#pydra.engine.state.State.inputs_ind" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">inputs_ind</span></code><a class="headerlink" href="#pydra.engine.state.State.inputs_ind" title="Permalink to this definition">¶</a></dt>
 <dd><p>dictionary for every state that contains
 indices for all task inputs (i.e. inputs that are relevant
 for current task, can be outputs from previous nodes)</p>
@@ -335,7 +334,7 @@ for current task, can be outputs from previous nodes)</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.group_for_inputs">
-<code class="sig-name descname">group_for_inputs</code><a class="headerlink" href="#pydra.engine.state.State.group_for_inputs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">group_for_inputs</span></code><a class="headerlink" href="#pydra.engine.state.State.group_for_inputs" title="Permalink to this definition">¶</a></dt>
 <dd><p>specifying groups (axes) for each input field
 (depends on the splitter)</p>
 <dl class="field-list simple">
@@ -347,7 +346,7 @@ for current task, can be outputs from previous nodes)</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.group_for_inputs_final">
-<code class="sig-name descname">group_for_inputs_final</code><a class="headerlink" href="#pydra.engine.state.State.group_for_inputs_final" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">group_for_inputs_final</span></code><a class="headerlink" href="#pydra.engine.state.State.group_for_inputs_final" title="Permalink to this definition">¶</a></dt>
 <dd><p>specifying final groups (axes)
 for each input field (depends on the splitter and combiner)</p>
 <dl class="field-list simple">
@@ -359,7 +358,7 @@ for each input field (depends on the splitter and combiner)</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.groups_stack_final">
-<code class="sig-name descname">groups_stack_final</code><a class="headerlink" href="#pydra.engine.state.State.groups_stack_final" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">groups_stack_final</span></code><a class="headerlink" href="#pydra.engine.state.State.groups_stack_final" title="Permalink to this definition">¶</a></dt>
 <dd><p>specify stack of groups/axes (used to
 determine which field could be combined)</p>
 <dl class="field-list simple">
@@ -371,7 +370,7 @@ determine which field could be combined)</p>
 
 <dl class="py attribute">
 <dt id="pydra.engine.state.State.final_combined_ind_mapping">
-<code class="sig-name descname">final_combined_ind_mapping</code><a class="headerlink" href="#pydra.engine.state.State.final_combined_ind_mapping" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">final_combined_ind_mapping</span></code><a class="headerlink" href="#pydra.engine.state.State.final_combined_ind_mapping" title="Permalink to this definition">¶</a></dt>
 <dd><p>mapping between final indices
 after combining and partial indices of the results</p>
 <dl class="field-list simple">
@@ -383,19 +382,19 @@ after combining and partial indices of the results</p>
 
 <dl class="py method">
 <dt id="id0">
-<em class="property">property </em><code class="sig-name descname">combiner</code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">combiner</span></code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
 <dd><p>the combiner associated to the state.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.combiner_validation">
-<code class="sig-name descname">combiner_validation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.combiner_validation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">combiner_validation</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.combiner_validation" title="Permalink to this definition">¶</a></dt>
 <dd><p>validating if the combiner is correct (after all states are connected)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.current_combiner">
-<em class="property">property </em><code class="sig-name descname">current_combiner</code><a class="headerlink" href="#pydra.engine.state.State.current_combiner" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">current_combiner</span></code><a class="headerlink" href="#pydra.engine.state.State.current_combiner" title="Permalink to this definition">¶</a></dt>
 <dd><p>the current part of the combiner,
 i.e. the part that is related to the current task’s state only
 (doesn’t include fields propagated from the previous tasks)</p>
@@ -403,7 +402,7 @@ i.e. the part that is related to the current task’s state only
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.current_combiner_all">
-<em class="property">property </em><code class="sig-name descname">current_combiner_all</code><a class="headerlink" href="#pydra.engine.state.State.current_combiner_all" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">current_combiner_all</span></code><a class="headerlink" href="#pydra.engine.state.State.current_combiner_all" title="Permalink to this definition">¶</a></dt>
 <dd><p>the current part of the combiner including all the fields
 that should be combined (i.e. not only the fields that are explicitly
 set, but also the fields that re in the same group/axis and had to be combined
@@ -412,7 +411,7 @@ together, e.g., if splitter is (a, b) a and b has to be combined together)</p>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.current_splitter">
-<em class="property">property </em><code class="sig-name descname">current_splitter</code><a class="headerlink" href="#pydra.engine.state.State.current_splitter" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">current_splitter</span></code><a class="headerlink" href="#pydra.engine.state.State.current_splitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>the current part of the splitter,
 i.e. the part that is related to the current task’s state only
 (doesn’t include fields propagated from the previous tasks)</p>
@@ -420,13 +419,13 @@ i.e. the part that is related to the current task’s state only
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.current_splitter_rpn">
-<em class="property">property </em><code class="sig-name descname">current_splitter_rpn</code><a class="headerlink" href="#pydra.engine.state.State.current_splitter_rpn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">current_splitter_rpn</span></code><a class="headerlink" href="#pydra.engine.state.State.current_splitter_rpn" title="Permalink to this definition">¶</a></dt>
 <dd><p>the current part of the splitter using RPN</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="id1">
-<em class="property">property </em><code class="sig-name descname">inner_inputs</code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">inner_inputs</span></code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
 <dd><p>specifies connections between fields from the current state
 with the specific state from the previous states, uses dictionary
 <code class="docutils literal notranslate"><span class="pre">{input</span> <span class="pre">name</span> <span class="pre">for</span> <span class="pre">current</span> <span class="pre">state:</span> <span class="pre">the</span> <span class="pre">previous</span> <span class="pre">state}</span></code></p>
@@ -434,14 +433,14 @@ with the specific state from the previous states, uses dictionary
 
 <dl class="py method">
 <dt id="id2">
-<em class="property">property </em><code class="sig-name descname">other_states</code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">other_states</span></code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
 <dd><p>specifies the connections with previous states, uses dictionary:
 {name of a previous state: (previous state, input field from current state)}</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prepare_inputs">
-<code class="sig-name descname">prepare_inputs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_inputs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">prepare_inputs</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_inputs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Preparing inputs indices, merges input from previous states.</p>
 <p>Includes indices for fields from inner splitters
 (removes elements connected to the inner splitters fields).</p>
@@ -449,7 +448,7 @@ with the specific state from the previous states, uses dictionary
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prepare_states">
-<code class="sig-name descname">prepare_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">cont_dim</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">prepare_states</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cont_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prepare a full list of state indices and state values.</p>
 <dl class="simple">
 <dt>State Indices</dt><dd><p>number of elements depends on the splitter</p>
@@ -469,7 +468,7 @@ with the specific state from the previous states, uses dictionary
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prepare_states_combined_ind">
-<code class="sig-name descname">prepare_states_combined_ind</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">elements_to_remove_comb</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states_combined_ind" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">prepare_states_combined_ind</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elements_to_remove_comb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states_combined_ind" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prepare the final list of dictionaries with indices after combiner.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -480,27 +479,27 @@ with the specific state from the previous states, uses dictionary
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prepare_states_ind">
-<code class="sig-name descname">prepare_states_ind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states_ind" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">prepare_states_ind</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states_ind" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculate a list of dictionaries with state indices.</p>
 <p>Uses hlpst.splits.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prepare_states_val">
-<code class="sig-name descname">prepare_states_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states_val" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">prepare_states_val</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.prepare_states_val" title="Permalink to this definition">¶</a></dt>
 <dd><p>Evaluate states values having states indices.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prev_state_combiner">
-<em class="property">property </em><code class="sig-name descname">prev_state_combiner</code><a class="headerlink" href="#pydra.engine.state.State.prev_state_combiner" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prev_state_combiner</span></code><a class="headerlink" href="#pydra.engine.state.State.prev_state_combiner" title="Permalink to this definition">¶</a></dt>
 <dd><p>the prev-state part of the combiner,
 i.e. the part that comes from the previous tasks’ states</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prev_state_combiner_all">
-<em class="property">property </em><code class="sig-name descname">prev_state_combiner_all</code><a class="headerlink" href="#pydra.engine.state.State.prev_state_combiner_all" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prev_state_combiner_all</span></code><a class="headerlink" href="#pydra.engine.state.State.prev_state_combiner_all" title="Permalink to this definition">¶</a></dt>
 <dd><p>the prev-state part of the combiner including all the fields
 that should be combined (i.e. not only the fields that are explicitly
 set, but also the fields that re in the same group/axis and had to be combined
@@ -509,27 +508,27 @@ together, e.g., if splitter is (a, b) a and b has to be combined together)</p>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prev_state_splitter">
-<em class="property">property </em><code class="sig-name descname">prev_state_splitter</code><a class="headerlink" href="#pydra.engine.state.State.prev_state_splitter" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prev_state_splitter</span></code><a class="headerlink" href="#pydra.engine.state.State.prev_state_splitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>the prev-state part of the splitter,
 i.e. the part that comes from the previous tasks’ states</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prev_state_splitter_rpn">
-<em class="property">property </em><code class="sig-name descname">prev_state_splitter_rpn</code><a class="headerlink" href="#pydra.engine.state.State.prev_state_splitter_rpn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prev_state_splitter_rpn</span></code><a class="headerlink" href="#pydra.engine.state.State.prev_state_splitter_rpn" title="Permalink to this definition">¶</a></dt>
 <dd><p>the prev-state art of the splitter using RPN</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.prev_state_splitter_rpn_compact">
-<em class="property">property </em><code class="sig-name descname">prev_state_splitter_rpn_compact</code><a class="headerlink" href="#pydra.engine.state.State.prev_state_splitter_rpn_compact" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prev_state_splitter_rpn_compact</span></code><a class="headerlink" href="#pydra.engine.state.State.prev_state_splitter_rpn_compact" title="Permalink to this definition">¶</a></dt>
 <dd><p>the prev-state part of the splitter using RPN in a compact form,
 (without unwrapping the states from previous nodes), e.g. [_NA, _NB, *]</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.set_input_groups">
-<code class="sig-name descname">set_input_groups</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state_fields</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.set_input_groups" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">set_input_groups</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.set_input_groups" title="Permalink to this definition">¶</a></dt>
 <dd><p>Evaluates groups, especially the final groups that address the combiner.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -540,25 +539,25 @@ i.e. the part that comes from the previous tasks’ states</p>
 
 <dl class="py method">
 <dt id="id3">
-<em class="property">property </em><code class="sig-name descname">splitter</code><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">splitter</span></code><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the splitter of the state.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="id4">
-<em class="property">property </em><code class="sig-name descname">splitter_final</code><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">splitter_final</span></code><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
 <dd><p>the final splitter, after removing the combined fields</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="id5">
-<em class="property">property </em><code class="sig-name descname">splitter_rpn</code><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">splitter_rpn</span></code><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
 <dd><p>splitter in <abbr title="Reverse Polish Notation">RPN</abbr></p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="id6">
-<em class="property">property </em><code class="sig-name descname">splitter_rpn_compact</code><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">splitter_rpn_compact</span></code><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
 <dd><p>splitter in <abbr title="Reverse Polish Notation">RPN</abbr>
 with a compact representation of the prev-state part (i.e. without unwrapping
 the part that comes from the previous states), e.g., [_NA, _NB, *]</p>
@@ -566,18 +565,18 @@ the part that comes from the previous states), e.g., [_NA, _NB, *]</p>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.splitter_rpn_final">
-<em class="property">property </em><code class="sig-name descname">splitter_rpn_final</code><a class="headerlink" href="#pydra.engine.state.State.splitter_rpn_final" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">splitter_rpn_final</span></code><a class="headerlink" href="#pydra.engine.state.State.splitter_rpn_final" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.splitter_validation">
-<code class="sig-name descname">splitter_validation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.splitter_validation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">splitter_validation</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.splitter_validation" title="Permalink to this definition">¶</a></dt>
 <dd><p>validating if the splitter is correct (after all states are connected)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.state.State.update_connections">
-<code class="sig-name descname">update_connections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_other_states</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">new_combiner</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.update_connections" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update_connections</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_other_states</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_combiner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.state.State.update_connections" title="Permalink to this definition">¶</a></dt>
 <dd><p>updating connections, can use a new other_states and combiner</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

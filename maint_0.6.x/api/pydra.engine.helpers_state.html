@@ -190,32 +190,32 @@
 <p>Additional functions used mostly by the State class.</p>
 <dl class="py exception">
 <dt id="pydra.engine.helpers_state.PydraStateError">
-<em class="property">exception </em><code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">PydraStateError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.PydraStateError" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">PydraStateError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.PydraStateError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
 <p>Custom error for Pydra State</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.add_name_combiner">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">add_name_combiner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">combiner</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.add_name_combiner" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">add_name_combiner</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combiner</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.add_name_combiner" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a node’s name to each field from the combiner</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.add_name_splitter">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">add_name_splitter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">splitter</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.add_name_splitter" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">add_name_splitter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">splitter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.add_name_splitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a node’s name to each field from the splitter</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.combine_final_groups">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">combine_final_groups</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">combiner</span></em>, <em class="sig-param"><span class="n">groups</span></em>, <em class="sig-param"><span class="n">groups_stack</span></em>, <em class="sig-param"><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.combine_final_groups" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">combine_final_groups</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combiner</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups_stack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.combine_final_groups" title="Permalink to this definition">¶</a></dt>
 <dd><p>Combine the final groups.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.converter_groups_to_input">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">converter_groups_to_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group_for_inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.converter_groups_to_input" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">converter_groups_to_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_for_inputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.converter_groups_to_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return fields for each axis and number of all groups.</p>
 <p>Requires having axes for all the input fields.</p>
 <dl class="field-list simple">
@@ -227,37 +227,37 @@
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.flatten">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">flatten</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vals</span></em>, <em class="sig-param"><span class="n">cur_depth</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_depth</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.flatten" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">flatten</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cur_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.flatten" title="Permalink to this definition">¶</a></dt>
 <dd><p>Flatten a list of values.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.input_shape">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">input_shape</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inp</span></em>, <em class="sig-param"><span class="n">cont_dim</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.input_shape" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">input_shape</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cont_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.input_shape" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get input shape, depends on the container dimension, if not specify it is assumed to be 1</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.inputs_types_to_dict">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">inputs_types_to_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.inputs_types_to_dict" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">inputs_types_to_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.inputs_types_to_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert type.Inputs to dictionary.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.iter_splits">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">iter_splits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable</span></em>, <em class="sig-param"><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.iter_splits" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">iter_splits</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.iter_splits" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate splits.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.map_splits">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">map_splits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">split_iter</span></em>, <em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">cont_dim</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.map_splits" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">map_splits</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">split_iter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cont_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.map_splits" title="Permalink to this definition">¶</a></dt>
 <dd><p>generate a dictionary of inputs prescribed by the splitter.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.remove_inp_from_splitter_rpn">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">remove_inp_from_splitter_rpn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">splitter_rpn</span></em>, <em class="sig-param"><span class="n">inputs_to_remove</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.remove_inp_from_splitter_rpn" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">remove_inp_from_splitter_rpn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">splitter_rpn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputs_to_remove</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.remove_inp_from_splitter_rpn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove inputs due to combining.</p>
 <p>Mutates a splitter.</p>
 <dl class="field-list simple">
@@ -272,7 +272,7 @@
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.rpn2splitter">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">rpn2splitter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">splitter_rpn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.rpn2splitter" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">rpn2splitter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">splitter_rpn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.rpn2splitter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert from splitter_rpn to splitter.</p>
 <p>Recurrent algorithm to perform the conversion.
 Every time combines pairs of input in one input,
@@ -292,7 +292,7 @@ ends when the length is one.</p>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.splits">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">splits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">splitter_rpn</span></em>, <em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">inner_inputs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cont_dim</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.splits" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">splits</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">splitter_rpn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner_inputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cont_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.splits" title="Permalink to this definition">¶</a></dt>
 <dd><p>Splits input variable as specified by splitter</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -316,14 +316,14 @@ if not specified 1 will be used for all inputs (so will not be flatten)</p></li>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.splits_groups">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">splits_groups</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">splitter_rpn</span></em>, <em class="sig-param"><span class="n">combiner</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">inner_inputs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.splits_groups" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">splits_groups</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">splitter_rpn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combiner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner_inputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.splits_groups" title="Permalink to this definition">¶</a></dt>
 <dd><p>splits inputs to groups (axes) and creates stacks for these groups
 This is used to specify which input can be combined.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="pydra.engine.helpers_state.splitter2rpn">
-<code class="sig-prename descclassname">pydra.engine.helpers_state.</code><code class="sig-name descname">splitter2rpn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">splitter</span></em>, <em class="sig-param"><span class="n">other_states</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">state_fields</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.splitter2rpn" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">pydra.engine.helpers_state.</span></code><code class="sig-name descname"><span class="pre">splitter2rpn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">splitter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_states</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.helpers_state.splitter2rpn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Translate user-provided splitter into <em>reverse polish notation</em>.</p>
 <p>The reverse polish notation is imposed by <a class="reference internal" href="pydra.engine.state.html#pydra.engine.state.State" title="pydra.engine.state.State"><code class="xref py py-class docutils literal notranslate"><span class="pre">State</span></code></a>.</p>
 <dl class="field-list simple">

@@ -240,25 +240,25 @@
 </div>
 <dl class="py class">
 <dt id="pydra.engine.task.ContainerTask">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.task.</code><code class="sig-name descname">ContainerTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">container_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.task.</span></code><code class="sig-name descname"><span class="pre">ContainerTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.task.ShellCommandTask" title="pydra.engine.task.ShellCommandTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.task.ShellCommandTask</span></code></a></p>
 <p>Extend shell command task for containerized execution.</p>
 <dl class="py method">
 <dt id="pydra.engine.task.ContainerTask.bind_paths">
-<code class="sig-name descname">bind_paths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ind</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask.bind_paths" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">bind_paths</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask.bind_paths" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return bound mount points: <code class="docutils literal notranslate"><span class="pre">dict(lpath:</span> <span class="pre">(cpath,</span> <span class="pre">mode))</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.task.ContainerTask.binds">
-<code class="sig-name descname">binds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opt</span></em>, <em class="sig-param"><span class="n">ind</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask.binds" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">binds</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask.binds" title="Permalink to this definition">¶</a></dt>
 <dd><p>Specify mounts to bind from local filesystems to container and working directory.</p>
 <p>Uses py:meth:<cite>binds_paths</cite></p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.task.ContainerTask.container_check">
-<code class="sig-name descname">container_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">container_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask.container_check" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">container_check</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ContainerTask.container_check" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get container-specific CLI arguments.</p>
 </dd></dl>
 
@@ -266,44 +266,44 @@
 
 <dl class="py class">
 <dt id="pydra.engine.task.DockerTask">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.task.</code><code class="sig-name descname">DockerTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">container_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.DockerTask" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.task.</span></code><code class="sig-name descname"><span class="pre">DockerTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.DockerTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.task.ContainerTask" title="pydra.engine.task.ContainerTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.task.ContainerTask</span></code></a></p>
 <p>Extend shell command task for containerized execution with the Docker Engine.</p>
 <dl class="py method">
 <dt id="pydra.engine.task.DockerTask.container_args">
-<em class="property">property </em><code class="sig-name descname">container_args</code><a class="headerlink" href="#pydra.engine.task.DockerTask.container_args" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">container_args</span></code><a class="headerlink" href="#pydra.engine.task.DockerTask.container_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get container-specific CLI arguments, returns a list if the task has a state</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt id="pydra.engine.task.DockerTask.init">
-<code class="sig-name descname">init</code><em class="property"> = False</em><a class="headerlink" href="#pydra.engine.task.DockerTask.init" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">init</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#pydra.engine.task.DockerTask.init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="pydra.engine.task.FunctionTask">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.task.</code><code class="sig-name descname">FunctionTask</code><span class="sig-paren">(</span><em class="sig-param">func: Callable</em>, <em class="sig-param">audit_flags: pydra.utils.messenger.AuditFlag = &lt;AuditFlag.NONE: 0&gt;</em>, <em class="sig-param">cache_dir=None</em>, <em class="sig-param">cache_locations=None</em>, <em class="sig-param">input_spec: Optional[pydra.engine.specs.SpecInfo] = None</em>, <em class="sig-param">messenger_args=None</em>, <em class="sig-param">messengers=None</em>, <em class="sig-param">name=None</em>, <em class="sig-param">output_spec: Optional[pydra.engine.specs.BaseSpec] = None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.FunctionTask" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.task.</span></code><code class="sig-name descname"><span class="pre">FunctionTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">func:</span> <span class="pre">Callable</span></em>, <em class="sig-param"><span class="pre">audit_flags:</span> <span class="pre">pydra.utils.messenger.AuditFlag</span> <span class="pre">=</span> <span class="pre">&lt;AuditFlag.NONE:</span> <span class="pre">0&gt;</span></em>, <em class="sig-param"><span class="pre">cache_dir=None</span></em>, <em class="sig-param"><span class="pre">cache_locations=None</span></em>, <em class="sig-param"><span class="pre">input_spec:</span> <span class="pre">Optional[pydra.engine.specs.SpecInfo]</span> <span class="pre">=</span> <span class="pre">None</span></em>, <em class="sig-param"><span class="pre">messenger_args=None</span></em>, <em class="sig-param"><span class="pre">messengers=None</span></em>, <em class="sig-param"><span class="pre">name=None</span></em>, <em class="sig-param"><span class="pre">output_spec:</span> <span class="pre">Optional[pydra.engine.specs.BaseSpec]</span> <span class="pre">=</span> <span class="pre">None</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.FunctionTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.core.TaskBase</span></code></a></p>
 <p>Wrap a Python callable as a task element.</p>
 </dd></dl>
 
 <dl class="py class">
 <dt id="pydra.engine.task.ShellCommandTask">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.task.</code><code class="sig-name descname">ShellCommandTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">container_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ShellCommandTask" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.task.</span></code><code class="sig-name descname"><span class="pre">ShellCommandTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.ShellCommandTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydra.engine.core.html#pydra.engine.core.TaskBase" title="pydra.engine.core.TaskBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.core.TaskBase</span></code></a></p>
 <p>Wrap a shell command as a task element.</p>
 <dl class="py method">
 <dt id="pydra.engine.task.ShellCommandTask.cmdline">
-<em class="property">property </em><code class="sig-name descname">cmdline</code><a class="headerlink" href="#pydra.engine.task.ShellCommandTask.cmdline" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">cmdline</span></code><a class="headerlink" href="#pydra.engine.task.ShellCommandTask.cmdline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the actual command line that will be submitted
 Returns a list if the task has a state.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="pydra.engine.task.ShellCommandTask.command_args">
-<em class="property">property </em><code class="sig-name descname">command_args</code><a class="headerlink" href="#pydra.engine.task.ShellCommandTask.command_args" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">command_args</span></code><a class="headerlink" href="#pydra.engine.task.ShellCommandTask.command_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get command line arguments, returns a list if task has a state</p>
 </dd></dl>
 
@@ -311,18 +311,18 @@ Returns a list if the task has a state.</p>
 
 <dl class="py class">
 <dt id="pydra.engine.task.SingularityTask">
-<em class="property">class </em><code class="sig-prename descclassname">pydra.engine.task.</code><code class="sig-name descname">SingularityTask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">container_info</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.SingularityTask" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pydra.engine.task.</span></code><code class="sig-name descname"><span class="pre">SingularityTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydra.engine.task.SingularityTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pydra.engine.task.ContainerTask" title="pydra.engine.task.ContainerTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">pydra.engine.task.ContainerTask</span></code></a></p>
 <p>Extend shell command task for containerized execution with Singularity.</p>
 <dl class="py method">
 <dt id="pydra.engine.task.SingularityTask.container_args">
-<em class="property">property </em><code class="sig-name descname">container_args</code><a class="headerlink" href="#pydra.engine.task.SingularityTask.container_args" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">container_args</span></code><a class="headerlink" href="#pydra.engine.task.SingularityTask.container_args" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get container-specific CLI arguments.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt id="pydra.engine.task.SingularityTask.init">
-<code class="sig-name descname">init</code><em class="property"> = False</em><a class="headerlink" href="#pydra.engine.task.SingularityTask.init" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">init</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#pydra.engine.task.SingularityTask.init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
