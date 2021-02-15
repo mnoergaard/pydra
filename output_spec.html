@@ -227,7 +227,7 @@ and possible types.</p>
 <dl class="simple">
 <dt><cite>help_string</cite> (<cite>str</cite>, mandatory):</dt><dd><p>A short description of the input field. The same as in <cite>input_spec</cite>.</p>
 </dd>
-<dt><cite>output_file_template</cite> (<cite>str</cite>):</dt><dd><p>If provided, the field is treated also as an output field and it is added to the output spec.
+<dt><cite>output_file_template</cite> (<cite>str</cite>):</dt><dd><p>If provided the output file name (or list of file names) is created using the template.
 The template can use other fields, e.g. <cite>{file1}</cite>. The same as in <cite>input_spec</cite>.</p>
 </dd>
 <dt><cite>output_field_name</cite> (<cite>str</cite>, used together with <cite>output_file_template</cite>)</dt><dd><p>If provided the field is added to the output spec with changed name.
@@ -240,6 +240,12 @@ The same as in <cite>input_spec</cite>.</p>
 The fields do not have to be a part of the <cite>output_file_template</cite> and
 if any field from the list is not provided in the input, a <cite>NOTHING</cite> is returned for the specific output.
 This has a different meaning than the <cite>requires</cite> form the <cite>input_spec</cite>.</p>
+</dd>
+<dt><cite>callable</cite> (<cite>function</cite>):</dt><dd><p>If provided the output file name (or list of file names) is created using the function.
+The function can take <cite>field</cite> (the specific output field will be passed to the function),
+<cite>output_dir</cite> (task <cite>output_dir</cite> wil be used), <cite>stdout</cite>, <cite>stderr</cite> (<cite>stdout</cite> and <cite>stderr</cite> of
+the task will be sent) <cite>inputs</cite> (entire <cite>inputs</cite> will be passed) or any input field name
+(a specific input field will be sent).</p>
 </dd>
 </dl>
 </div>
